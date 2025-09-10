@@ -3,6 +3,7 @@ This document describes how to get started with kernel development in Rust.
 - https://docs.kernel.org/rust/quick-start.html
 - https://rust.docs.kernel.org/kernel/index.html
   - https://github.com/Rust-for-Linux/linux/
+  - https://rust-for-linux.com/
 
 # Linux 오리지날 문서
 - https://www.kernel.org/doc/html/latest/
