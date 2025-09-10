@@ -22,7 +22,6 @@ This document describes how to get started with kernel development in Rust.
   - [Expanding The Tree - Rust Clipper Compiler (EP.5) | CoderSauce](https://youtu.be/mS51V_L9Jz8?si=gzCTvgzpNfK6Oi_P)
 
 - 유료 링크(리눅스 커널 난중에 결제해서 보자 넘 좋다.)
-  - [./01_LWN_subscriber-only_Content폴더에 따로 정리중.](./01_LWN_subscriber-only_Content)
   - [리눅스 커널 난중에 결제해서 보자 넘 좋다.](#유료-콘텐츠난중에-결제해서-보자)
 
 - [외부링크) PopOS러스트 iced(GUI)(Alpha release of PopOS's Cosmic desktop environment, written in Rust and based on Iced )](https://www.reddit.com/r/rust/comments/1f38xni/alpha_release_of_poposs_cosmic_desktop/?rdt=55213)
