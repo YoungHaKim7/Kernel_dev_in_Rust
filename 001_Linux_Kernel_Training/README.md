@@ -1,6 +1,8 @@
 # Quick Start) kernel development in Rust.
 This document describes how to get started with kernel development in Rust.
 - https://docs.kernel.org/rust/quick-start.html
+- https://rust.docs.kernel.org/kernel/index.html
+  - https://github.com/Rust-for-Linux/linux/
 
 # 알고리즘 및 OS & 네트워크 다정리중..
 - https://github.com/YoungHaKim7/Algorithm_Training
