@@ -15,4 +15,6 @@ In order to build the documentation, use ``make htmldocs`` or
 
 ```bash
 sudo apt-get install imagemagick graphviz dvipng python3-venv fonts-noto-cjk latexmk librsvg2-bin texlive-lang-chinese texlive-xetex
+
+sudo apt-get install python3-sphinx
 ```
