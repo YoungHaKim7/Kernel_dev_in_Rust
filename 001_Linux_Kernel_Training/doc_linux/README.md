@@ -1,5 +1,7 @@
 - https://rust.docs.kernel.org/kernel/
 
+# 온라인으로 커널 문서 읽기
+- https://www.kernel.org/doc/html/latest/
 
 #  커널 문서 pdf로 바꾸려면 이거 설치해야함.
 - https://github.com/Rust-for-Linux/linux/
