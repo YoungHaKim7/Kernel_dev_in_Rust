@@ -5,7 +5,13 @@
 
 # News[|🔝|](#link)
 - [(유료 콘텐츠 250903)Tracking trust with Rust in the kernel](https://lwn.net/SubscriberLink/1034603/5dcfecdd5e3af0c2/)
-- 
+
+
+# Do kernel maintainers support Rust in the kernel?
+
+- Yes, there are key kernel maintainers that support Rust in the kernel.
+
+- Please see the quotes given by kernel maintainers for the [FOSDEM 2025 Rust for Linux keynote, slides 45-85.]((https://fosdem.org/2025/events/attachments/fosdem-2025-6507-rust-for-linux/slides/237976/2025-02-0_iwSaMYM.pdf)
 
 # Kernel 요약[|🔝|](#link)
 - How to write Rust in the kernel [Posted June 20, 2025 by daroc]
