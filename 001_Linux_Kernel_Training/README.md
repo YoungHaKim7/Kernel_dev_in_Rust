@@ -23,6 +23,9 @@
   - [(250325) System Design was HARD until I Learned these 30 Concepts | Ashish Pratap Singh](https://youtu.be/s9Qh9fWeOAk?si=uNOk8J2o7eFDMAO8)
   - RISC-V 아키텍처
     - [RISC-V영상 모아보기 | Austin Kim](https://youtube.com/playlist?list=PLRrUisvYoUw_4ES8R-H7lgjsqjZeKhI9W&si=nf6j59Z1IBzUai2d)
+  - 리눅스 커널의 구조와 원리
+    - Armv8-A
+      - [영상모아 보기) 리눅스 커널의 구조와 원리 1부(v6.1, Armv8-A 기반) | Austin Kim](https://youtube.com/playlist?list=PLRrUisvYoUw_bFoK0ahLy9MHfBgBZJyz4&si=WmveEC7wLZ9ZK0nP)
 
 - 용어정리
   - [DPL개념이해](#dpl개념이해)
