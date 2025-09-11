@@ -17,6 +17,7 @@
 - [외부링크) PopOS러스트 iced(GUI)(Alpha release of PopOS's Cosmic desktop environment, written in Rust and based on Iced )](https://www.reddit.com/r/rust/comments/1f38xni/alpha_release_of_poposs_cosmic_desktop/?rdt=55213)
 
 - 유튜브 영상 모음
+  - [240205 유료강의소개 (인프런-로드맵] 'Arm 아키텍처의 구조와 원리 저자 직강 강의'- 모두 업로드 완료! | Austin Kim](https://m.youtube.com/watch?si=DAzymb8g8F7JhQC0&v=9kOdb7w_PCU&feature=youtu.be)
   - [(240806) Operating Systems Course for Beginners | freeCodeCamp.org](https://youtu.be/yK1uBHPdp30?si=aGUK8RRxTdXu1A-9)
   - [(210108) System Design Course for beginners | Geek's Lesson](https://youtu.be/MbjObHmDbZo?si=SwE1oWai_aaJZaN5)
   - [(250325) System Design was HARD until I Learned these 30 Concepts | Ashish Pratap Singh](https://youtu.be/s9Qh9fWeOAk?si=uNOk8J2o7eFDMAO8)
