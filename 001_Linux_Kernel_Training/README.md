@@ -1,26 +1,6 @@
-# Quick Start) kernel development in Rust.
-This document describes how to get started with kernel development in Rust.
-- https://docs.kernel.org/rust/quick-start.html
-- https://rust.docs.kernel.org/kernel/index.html
-  - https://github.com/Rust-for-Linux/linux/
-
-  - https://rust-for-linux.com/
-
-# Linux 오리지날 문서
-- https://www.kernel.org/doc/html/latest/
-
-# fork 해서 미친듯이 분석해보자
-- https://github.com/YoungHaKim7/linux
-
-# 알고리즘 및 OS & 네트워크 다정리중..
-- https://github.com/YoungHaKim7/Algorithm_Training
-
-# Rust OSDev(Operating System Development in Rust)
-- https://rust-osdev.com/
-
-<hr>
-
 # link
+
+- [리눅스 커널을 만들기 위해 마스터 해야 3권의 책 How to do Linux Kernel dev.](#howto-do-linux-kernel-development)
 
 - [A PROGRAM is not a PROCESS. | Core Dumped](https://youtu.be/7ge7u5VUSbE)
 
@@ -55,6 +35,28 @@ This document describes how to get started with kernel development in Rust.
   - [(외부링크) QEMU UEFI 환경으로 부팅하기 (OVMF) | Posted May 23, 2024](https://gee6809.github.io/posts/ovmf/)
 
 <hr />
+
+<hr />
+
+# Quick Start) kernel development in Rust.
+This document describes how to get started with kernel development in Rust.
+- https://docs.kernel.org/rust/quick-start.html
+- https://rust.docs.kernel.org/kernel/index.html
+  - https://github.com/Rust-for-Linux/linux/
+
+  - https://rust-for-linux.com/
+
+# Linux 오리지날 문서
+- https://www.kernel.org/doc/html/latest/
+
+# fork 해서 미친듯이 분석해보자
+- https://github.com/YoungHaKim7/linux
+
+# 알고리즘 및 OS & 네트워크 다정리중..
+- https://github.com/YoungHaKim7/Algorithm_Training
+
+# Rust OSDev(Operating System Development in Rust)
+- https://rust-osdev.com/
 
 <hr />
 
