@@ -8,7 +8,7 @@
 
 
 # Do kernel maintainers support Rust in the kernel?
-
+- 출처 : https://rust-for-linux.com/rust-kernel-policy
 - Yes, there are key kernel maintainers that support Rust in the kernel.
 
 - Please see the quotes given by kernel maintainers for the [FOSDEM 2025 Rust for Linux keynote, slides 45-85.](https://fosdem.org/2025/events/attachments/fosdem-2025-6507-rust-for-linux/slides/237976/2025-02-0_iwSaMYM.pdf)
