@@ -58,6 +58,15 @@ This document describes how to get started with kernel development in Rust.
 
 <hr />
 
+# HOWTO do Linux kernel development
+- https://www.kernel.org/doc/html/latest/process/howto.html
+- 리눅스 커널을 만들기 위해선 이 3가지 책은 필수 마스터
+  - “The C Programming Language” by Kernighan and Ritchie [Prentice Hall]
+  - “Practical C Programming” by Steve Oualline [O’Reilly]
+  - “C: A Reference Manual” by Harbison and Steele [Prentice Hall]
+
+
+
 # 유료 콘텐츠(난중에 결제해서 보자)[|🔝|](#link)
 
 # (유료 콘텐츠)Tracking trust with Rust in the kernel[|🔝|](#link)
