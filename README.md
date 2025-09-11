@@ -1,3 +1,6 @@
+# Linux현재 버젼은(250911기준 ver. 6.17-rc5)
+- https://www.kernel.org/
+
 # Kernel_dev_in_Rust
 https://docs.kernel.org/rust/quick-start.html
 
