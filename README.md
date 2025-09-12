@@ -1,6 +1,21 @@
 # Linux현재 버젼은(250911기준 ver. 6.17-rc5)
 - https://www.kernel.org/
 
+- 250912기준
+```
+mainline: 	6.17-rc5 	2025-09-07 	
+stable: 	6.16.7 	2025-09-11 	
+stable: 	6.15.11 [EOL] 	2025-08-20 	
+longterm: 	6.12.47 	2025-09-11 	
+longterm: 	6.6.106 	2025-09-11 
+longterm: 	6.1.152 	2025-09-11 	
+longterm: 	5.15.193 	2025-09-11 	
+longterm: 	5.10.244 	2025-09-11 	
+longterm: 	5.4.299 	2025-09-09 	
+linux-next: 	next-20250911 	2025-09-11
+```
+
+
 # Kernel_dev_in_Rust
 https://docs.kernel.org/rust/quick-start.html
 
