@@ -1,5 +1,6 @@
 # link
 
+- [(외부링크)arm기반 애플 실리콘 리눅스 커널 분석 자료(Asahi Linux참고)](https://asahilinux.org/docs/)
 
 <hr />
 
