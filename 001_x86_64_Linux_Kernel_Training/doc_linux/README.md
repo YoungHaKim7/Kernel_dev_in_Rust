@@ -18,3 +18,6 @@ sudo apt-get install imagemagick graphviz dvipng python3-venv fonts-noto-cjk lat
 
 sudo apt-get install python3-sphinx
 ```
+
+# test macro
+- https://elixir.bootlin.com/linux/v6.15.1/source/rust/macros/kunit.rs
