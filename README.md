@@ -24,3 +24,7 @@ https://docs.kernel.org/rust/quick-start.html
 
 - LLDB 는 여기에 정리중.
   - https://github.com/YoungHaKim7/LLDB_Debugging_training
+
+# (250827) Every CPU Architecture Explained in Detail | Tech in a Teacup
+- Harvard / V. Neumann / RISC / EPIC / CISC / x86 / Arm / Hybrid 차이점 그림을 이해하기
+  - https://youtu.be/6tbNew87fZU?si=kx0qKpdK2-Xu4jDd
