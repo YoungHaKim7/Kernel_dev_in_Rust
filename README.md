@@ -28,3 +28,6 @@ https://docs.kernel.org/rust/quick-start.html
 # (250827) Every CPU Architecture Explained in Detail | Tech in a Teacup
 - Harvard / V. Neumann / RISC / EPIC / CISC / x86 / Arm / Hybrid 차이점 그림을 이해하기
   - https://youtu.be/6tbNew87fZU?si=kx0qKpdK2-Xu4jDd
+
+# 커널 뉴비 자료 굿
+- https://kernelnewbies.org/LinuxChanges#Linux_6.16.Networking
