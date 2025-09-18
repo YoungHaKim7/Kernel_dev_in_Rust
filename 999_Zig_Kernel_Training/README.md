@@ -7,3 +7,9 @@
   - Writing an operating system kernel from scratch (Posted on: September 13, 2025 |  at 09:30 AM)
     - https://popovicu.com/posts/writing-an-operating-system-kernel-from-scratch/
 
+# How to set up syzkaller
+- https://github.com/google/syzkaller/blob/master/docs/linux/setup.md
+
+
+# 리눅스 커널의 암호화가 양자 내성 암호(PQC)에 맞춰서 진화가 필요해요!
+- https://gamma.app/docs/Lets-Get-the-Linux-Kernel-Ready-for-the-PQCPost-Quantum-Era-KR-k8n5edhoamovypp
