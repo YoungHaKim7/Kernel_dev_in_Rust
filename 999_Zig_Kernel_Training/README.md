@@ -18,5 +18,10 @@
 # 커널 크립토 메일링 리스트
 - https://lore.kernel.org/linux-crypto/?q=quantum
 
+# 여러 mem cgroup이 page를 공유하는 유즈케이스가 궁금합니다.
+- private anonymous (copy-on-write), shared anonymous (shmem/tmpfs), private file-backed, shared file-backed 모두 여러 memory cgroup이 공유할 수 있습니다
+
+# 논리 qbit 몇비트에 도달하면 확실히 rsa가 깨질까요?
+- RSA-2048을 해독하려면 약 4,000개의 논리 큐비트 (logical qubits)가 필요
 
 <hr />
