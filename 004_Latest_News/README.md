@@ -10,6 +10,8 @@
     - [(241123)[9회 커널 개발자 모임] 1. kernel report (Part1) - 이현철 개발자님 Austin Kim](https://youtu.be/GN3HezzYW8Y?si=R9Dt9tybuJQ1_RK5)
     - [(241125)[9회 커널 개발자 모임] 1. kernel report (Part2) - 이현철 개발자님 Austin Kim](https://youtu.be/oSQ6M-oaQJk?si=_STI5nFBa4P1v8km)
     - [(241127)[9회 커널 개발자 모임] 1. kernel report (Part3) - 이현철 개발자님 Austin Kim](https://youtu.be/cnkdD1-pPsI?si=AAQXiSkcHTQXYASK)
+  - 제10회 한국 리눅스 커널 개발자 모임(250918(목))
+    - https://kernel-dev-ko.github.io/10th/
 
 # Do kernel maintainers support Rust in the kernel?
 - 출처 : https://rust-for-linux.com/rust-kernel-policy
