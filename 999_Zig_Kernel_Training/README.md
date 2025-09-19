@@ -13,3 +13,10 @@
 
 # 리눅스 커널의 암호화가 양자 내성 암호(PQC)에 맞춰서 진화가 필요해요!
 - https://gamma.app/docs/Lets-Get-the-Linux-Kernel-Ready-for-the-PQCPost-Quantum-Era-KR-k8n5edhoamovypp
+
+
+# 커널 크립토 메일링 리스트
+- https://lore.kernel.org/linux-crypto/?q=quantum
+
+
+<hr />
