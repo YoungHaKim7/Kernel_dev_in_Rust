@@ -17,6 +17,8 @@
 - [외부링크) PopOS러스트 iced(GUI)(Alpha release of PopOS's Cosmic desktop environment, written in Rust and based on Iced )](https://www.reddit.com/r/rust/comments/1f38xni/alpha_release_of_poposs_cosmic_desktop/?rdt=55213)
 
 - 유튜브 영상 모음
+  - 마소 자료MicroSoft
+    - [(230523) Getting to Know the Linux Kernel: A Beginner's Guide - Kelsey Steele & Nischala Yelchuri, Microsoft | The Linux Foundation](https://youtu.be/QatE61Ynwrw?si=5ISoYglI1PQdtlwV)
   - Arm
     - [240205 유료강의소개 (인프런-로드맵 |'Arm 아키텍처의 구조와 원리 저자 직강 강의'- 모두 업로드 완료! | Austin Kim](https://m.youtube.com/watch?si=DAzymb8g8F7JhQC0&v=9kOdb7w_PCU&feature=youtu.be)
   - [리눅스 커널의 존재 이유_간단히 설명 굿](https://youtube.com/shorts/ivyPFMZg4KI?si=4Qwqgt42CYHmC10s)
