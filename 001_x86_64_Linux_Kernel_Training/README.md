@@ -31,6 +31,8 @@
   - dr Jonas Birch시리즈
     - [외부영상 (251003)Project: Coding a GRUB bootloader for booting Linux | dr Jonas Birch](https://www.youtube.com/watch?v=ukIajayMv5U&t=153s)
   - Windows Driver만들기
+    - [영상 모아 보기 Diving into Windows Internals |  Nir Lichtman](https://youtube.com/playlist?list=PL0tgH22U2S3G2QpiK-Q1wKW_Fe-Wiu7JS&si=CYlEdyfJSgZ1ySbJ)
+  - Linux Driver만들기
     - [241004) Linux Device Drivers Development Course for Beginners | freeCodeCamp.org](https://youtu.be/iSiyDHobXHA?si=fV8dy_rFzFZSI_oI)
  
 
