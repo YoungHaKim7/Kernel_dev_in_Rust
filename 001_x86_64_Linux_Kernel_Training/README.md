@@ -30,7 +30,9 @@
       - [영상모아 보기) 리눅스 커널의 구조와 원리 1부(v6.1, Armv8-A 기반) | Austin Kim](https://youtube.com/playlist?list=PLRrUisvYoUw_bFoK0ahLy9MHfBgBZJyz4&si=WmveEC7wLZ9ZK0nP)
   - dr Jonas Birch시리즈
     - [외부영상 (251003)Project: Coding a GRUB bootloader for booting Linux | dr Jonas Birch](https://www.youtube.com/watch?v=ukIajayMv5U&t=153s)
-
+  - Windows Driver만들기
+    - [241004) Linux Device Drivers Development Course for Beginners | freeCodeCamp.org](https://youtu.be/iSiyDHobXHA?si=fV8dy_rFzFZSI_oI)
+ 
 
 - 용어정리
   - [DPL개념이해](#dpl개념이해)
