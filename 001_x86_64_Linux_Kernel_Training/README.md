@@ -28,6 +28,9 @@
   - 리눅스 커널의 구조와 원리
     - Armv8-A
       - [영상모아 보기) 리눅스 커널의 구조와 원리 1부(v6.1, Armv8-A 기반) | Austin Kim](https://youtube.com/playlist?list=PLRrUisvYoUw_bFoK0ahLy9MHfBgBZJyz4&si=WmveEC7wLZ9ZK0nP)
+  - dr Jonas Birch시리즈
+    - [외부영상 (251003)Project: Coding a GRUB bootloader for booting Linux | dr Jonas Birch](https://www.youtube.com/watch?v=ukIajayMv5U&t=153s)
+
 
 - 용어정리
   - [DPL개념이해](#dpl개념이해)
@@ -763,5 +766,12 @@ I am taking a course on data organization this semester, and since it is the pro
 
 
 <hr />  
+
+# 이 사람은 넘 좋다.
+# (251003)Project: Coding a GRUB bootloader for booting Linux | dr Jonas Birch[|🔝|](#link)
+- https://youtu.be/ukIajayMv5U?si=w1tlw42I4nHsp4G7
+
+
+<hr />
 
 <hr />
