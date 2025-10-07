@@ -85,6 +85,8 @@ This document describes how to get started with kernel development in Rust.
   - “Practical C Programming” by Steve Oualline [O’Reilly]
   - “C: A Reference Manual” by Harbison and Steele [Prentice Hall]
 
+- [Jonathan Corbet 및 | Linux Device Drivers, 3rd Edition](https://www.amazon.com/dp/0596005903/ref=mp_s_a_1_1)
+  - [책 소개 동영상 How Do Linux Kernel Drivers Work? - Learning Resource |LiveOverflow](https://youtu.be/juGNPLdjLH4?si=WIDPAwv2i5LP5JTG)
 
 
 # 유료 콘텐츠(난중에 결제해서 보자)[|🔝|](#link)
