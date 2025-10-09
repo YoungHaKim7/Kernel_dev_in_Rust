@@ -37,7 +37,10 @@
     - [영상 모아 보기 Diving into Windows Internals |  Nir Lichtman](https://youtube.com/playlist?list=PL0tgH22U2S3G2QpiK-Q1wKW_Fe-Wiu7JS&si=CYlEdyfJSgZ1ySbJ)
   - Linux Driver만들기
     - [241004) Linux Device Drivers Development Course for Beginners | freeCodeCamp.org](https://youtu.be/iSiyDHobXHA?si=fV8dy_rFzFZSI_oI)
- 
+  - Code Therapy w/ René Rebe자료
+    - [(251006) Watch Linux Kernel developer working LIVE re-base patches after Linux 6.17 release! | Code Therapy w/ René Rebe](https://youtu.be/7gpTmNWNTow?si=sArzYWPNodzusX-A)
+  
+
 
 - 용어정리
   - [DPL개념이해](#dpl개념이해)
