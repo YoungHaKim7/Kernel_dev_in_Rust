@@ -118,7 +118,10 @@ This document describes how to get started with kernel development in Rust.
 # 커널에서 에러 핸들링 하는방법(Rust)Best practices for error handling in kernel Rust[|🔝|](#link)
 - https://lwn.net/Articles/990489/
 
-
+# **[리눅스 커널 개발을 위한 Rust 언어의 새로운 기능들](<https://news.hada.io/topic?id=23716&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+- Rust for Linux 프로젝트가 **커널 개발에 필요한 핵심 언어 기능**을 추진하며, Rust 언어 자체 발전에 기여하고 있음  
+- **필드 프로젝션(Field Projection)**, **제자리 초기화(In-place Initialization)**, **임의 Self 타입(Arbitrary Self Types)** 세 가지가 핵심  
+- 이 기능들은 **스마트 포인터, 고정 메모…
 
 <hr />
 
