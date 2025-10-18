@@ -1,11 +1,20 @@
 # link
 
-- [linux 커널 현재 최신버젼(250911기준 ver. 6.17-rc5)](#linux커널현재-현재-버젼은250911기준-ver-617-rc5)
+- [linux 커널 현재 최신버젼(250911기준 ver. 6.17-rc5)](#linux커널_현재-버젼)
 
+
+- [Kernel_dev_in_Rust](#kernel_dev_in_rust)
 
 - [Rust로 리눅스 커널 개발 최신 소식](#rust로-linux커널-개발-관련-최신-소식)
-  - []()
+  - [(251017)_리눅스 커널 개발을 위한 Rust 언어의 새로운 기능들](#251017리눅스-커널-개발을-위한-rust-언어의-새로운-기능들)
 
+
+- 커널(Kernel dev.)기초 상식
+  - [커널 뉴비 자료 굿](#커널-뉴비-자료-굿)
+  - [(250827) Every CPU Architecture Explained in Detail | Tech in a Teacup](#250827-every-cpu-architecture-explained-in-detail--tech-in-a-teacup)
+
+- C언어를 러스트로 전환하는 프로젝트(Rust C interop)
+  - [Rust C interop](#rust-c-interop)
 
 <hr />
 
