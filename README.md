@@ -7,6 +7,7 @@
 
 - [Rust로 리눅스 커널 개발 최신 소식](#rust로-linux커널-개발-관련-최신-소식)
   - [(251017)_리눅스 커널 개발을 위한 Rust 언어의 새로운 기능들](#251017리눅스-커널-개발을-위한-rust-언어의-새로운-기능들)
+  - [Asterinas - 새로운 Linux-호환 커널 프로젝트(Linux를 대체할 수 있으며, 메모리 안전성 과 개발자 친화성 을 향상시킴)](./001_x86_64_Linux_Kernel_Training#asterinas---%EC%83%88%EB%A1%9C%EC%9A%B4-linux-%ED%98%B8%ED%99%98-%EC%BB%A4%EB%84%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 
 
 - 커널(Kernel dev.)기초 상식
