@@ -1,4 +1,16 @@
-# Linux현재 버젼은(250911기준 ver. 6.17-rc5)
+# link
+
+- [linux 커널 현재 최신버젼(250911기준 ver. 6.17-rc5)](#linux커널현재-현재-버젼은250911기준-ver-617-rc5)
+
+
+- [Rust로 리눅스 커널 개발 최신 소식](#rust로-linux커널-개발-관련-최신-소식)
+  - []()
+
+
+<hr />
+
+# Linux커널_현재 버젼[|🔝|](#link)
+- (250911기준 ver. 6.17-rc5)
 - https://www.kernel.org/
 
 - 250912기준
@@ -15,24 +27,24 @@ longterm: 	5.4.299 	2025-09-09
 linux-next: 	next-20250911 	2025-09-11
 ```
 
-# Kernel_dev_in_Rust
+# Kernel_dev_in_Rust[|🔝|](#link)
 https://docs.kernel.org/rust/quick-start.html
 
-# 커널 디버깅은 GDB나 LLDB로
+# 커널 디버깅은 GDB나 LLDB로[|🔝|](#link)
 - GDB 는 여기에 정리중.
   - https://github.com/YoungHaKim7/GDB_Debugger_Training
 
 - LLDB 는 여기에 정리중.
   - https://github.com/YoungHaKim7/LLDB_Debugging_training
 
-# (250827) Every CPU Architecture Explained in Detail | Tech in a Teacup
+# (250827) Every CPU Architecture Explained in Detail | Tech in a Teacup[|🔝|](#link)
 - Harvard / V. Neumann / RISC / EPIC / CISC / x86 / Arm / Hybrid 차이점 그림을 이해하기
   - https://youtu.be/6tbNew87fZU?si=kx0qKpdK2-Xu4jDd
 
-# 커널 뉴비 자료 굿
+# 커널 뉴비 자료 굿[|🔝|](#link)
 - https://kernelnewbies.org/LinuxChanges#Linux_6.16.Networking
 
-# Rust C interop
+# Rust C interop[|🔝|](#link)
 - https://www.reddit.com/r/rust/comments/90s2no/rust_c_interop/
 - I read that I can use C libraries from Rust using FFI https://doc.rust-lang.org/1.9.0/book/ffi.html .
   - My question is are there any performance issues related to calling C code from Rust? (think Java JNI issue). Are there any gotchas around calling C code from Rust? This book chapter does not say much
@@ -41,9 +53,9 @@ https://docs.kernel.org/rust/quick-start.html
 
 <hr />
 
-# Rust로 Linux커널 개발 관련 최신 소식
+# Rust로 Linux커널 개발 관련 최신 소식[|🔝|](#link)
 
-# (251017)**[리눅스 커널 개발을 위한 Rust 언어의 새로운 기능들](<https://news.hada.io/topic?id=23716&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+# (251017)**[리눅스 커널 개발을 위한 Rust 언어의 새로운 기능들](<https://news.hada.io/topic?id=23716&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**[|🔝|](#link)
 - Rust for Linux 프로젝트가 **커널 개발에 필요한 핵심 언어 기능**을 추진하며, Rust 언어 자체 발전에 기여하고 있음  
 - **필드 프로젝션(Field Projection)**, **제자리 초기화(In-place Initialization)**, **임의 Self 타입(Arbitrary Self Types)** 세 가지가 핵심  
 - 이 기능들은 **스마트 포인터, 고정 메모…
