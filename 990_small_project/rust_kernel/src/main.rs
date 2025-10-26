@@ -38,7 +38,6 @@
 mod bootboot;
 
 // Required for -Z build-std flag.
-extern crate rlibc;
 
 /******************************************
  * Entry point, called by BOOTBOOT Loader *
