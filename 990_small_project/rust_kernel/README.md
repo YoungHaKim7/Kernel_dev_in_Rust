@@ -1,12 +1,18 @@
 - https://gitlab.com/bztsrc/bootboot/-/tree/master/mykernel/rust?ref_type=heads
 
 
+- rust code
+
 ```rs
 assert_eq!(u64::MAX, 18446744073709551615);
 ```
 
 - x86
+  - decimal
   `18,446,744,073,709,551,615`
+  - hex
+  `7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00`
+
 
 ```
 ELF Header:
