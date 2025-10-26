@@ -39,7 +39,7 @@ r:
 
 ```
 
-- I successfully fixed the justfile to properly build the ARM kernel instead of using cargo xbuild. Here's what I accomplished:
+- I successfully fixed the justfile to properly build the ARM kernel instead of using `cargo xbuild`. Here's what I accomplished:
 
 - Issues Fixed:
 
