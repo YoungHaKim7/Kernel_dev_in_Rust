@@ -43,7 +43,15 @@ extern crate rlibc;
 /******************************************
  * Entry point, called by BOOTBOOT Loader *
  ******************************************/
-#[no_mangle] // don't mangle the name of this function
+
+use core::panic::PanicInfo;
+
+#[panic_handler]
+fn panic(_info: &PanicInfo) -> ! {
+    loop {}
+}
+ 
+#[unsafe(no_mangle)] // don't mangle the name of this function
 fn _start() -> ! {
     /*** NOTE: this code runs on all cores in parallel ***/
     use bootboot::*;
@@ -106,7 +114,7 @@ fn puts(string: &'static str) {
     let bootboot_r = unsafe { &(*(BOOTBOOT_INFO as *const BOOTBOOT)) };
 
     unsafe {
-        let font: *mut psf2_t = &_binary_font_psf_start as *const u64 as *mut psf2_t;
+        let font: *mut psf2_t = &raw const _binary_font_psf_start as *const u64 as *mut psf2_t;
         let (mut kx, mut line, mut mask, mut offs): (u32, u64, u64, u32);
         kx = 0;
         let bpl = ((*font).width + 7) / 8;

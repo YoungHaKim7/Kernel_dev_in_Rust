@@ -102,6 +102,6 @@ pub struct psf2_t {
     pub glyphs: u8,
 }
 
-extern "C" {
+unsafe extern "C" {
     pub static mut _binary_font_psf_start: u64;
 }
