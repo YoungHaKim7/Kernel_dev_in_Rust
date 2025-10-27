@@ -21,10 +21,12 @@ ELF Header:
   
 ```
 
-# Result
+# Todo
 
-- 고쳐야함
-  - cargo xbuild(없앨예정, LinuxOS만 고치면됨.)
+- Todo
+  - [ ] cargo xbuild(없앨예정, LinuxOS만 고치면됨.)
+
+# Result
 
 ```justfile
 # cargo run(x86_64)
