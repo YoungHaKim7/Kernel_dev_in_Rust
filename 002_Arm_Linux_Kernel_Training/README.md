@@ -4,6 +4,23 @@
 
 <hr />
 
+# Getting Started with Rust on a Raspberry Pi Pico (Part 1)
+- https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry
+  - https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+- https://github.com/raspberrypi/pico-sdk
+
+```
+$ git clone https://github.com/raspberrypi/debugprobe.git
+$ cd debugprobe
+$ git submodule update --init
+$ mkdir build
+$ cd build
+$ export PICO_SDK_PATH=../../pico-sdk
+$ cmake -DDEBUG_ON_PICO=ON -DPICO_BOARD=pico ..
+$ make -j4
+```
+
+
 # About Asahi Linux
 - Asahi Linux is a project and community with the goal of porting Linux to Apple Silicon Macs, starting with the 2020 M1 Mac Mini, MacBook Air, and MacBook Pro.
   - Our goal is not just to make Linux run on these machines but to polish it to the point where it can be used as a daily OS. Doing this requires a tremendous amount of work, as Apple Silicon is an entirely undocumented platform.
