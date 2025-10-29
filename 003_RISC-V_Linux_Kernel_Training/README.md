@@ -38,6 +38,7 @@
 <hr>
 
 # **[Easy RISC-V: 대화형 RISC-V 어셈블리 프로그래밍 입문 튜토리얼](<https://news.hada.io/topic?id=23972&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+- 251028
 - **웹 브라우저에서 실행 가능한 에뮬레이터**를 통해 **RISC-V 어셈블리**를 단계별로 학습할 수 있는 대화형 튜토리얼로, Nick Morgan의 Easy 6502에서 영감을 받아 제작됨  
 - **RV32I_Zicsr 명령어 세트**의 45개 기본 명령어와 특권 아키텍처의 핵심 개념을 다루며, 컴파일러 타겟으로 충분히 완전한 명령어 세트를…
 
