@@ -1,13 +1,5 @@
 # RISC-V
 
-# zig로 만든 커널
-- https://github.com/popovicu/zig-time-sharing-kernel
-- **[처음부터 직접 운영체제 커널 만들기](<https://news.hada.io/topic?id=23105&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
-- **RISC-V 아키텍처**에서 **타임셰어링 운영체제 프로토타입 커널**을 구현한 경험을 공유  
-- **시분할(time-sharing) 커널**의 개념과 동작 방식을 실습 중심으로 설명하며, C 대신 **Zig**로 구현해 재현성을 높임  
-- 커널과 사용자 코드를 하나의 바이너리로 묶는 **unikernel** 접근을 취하고, 콘솔 출력과 타이…
-  - Writing an operating system kernel from scratch (Posted on: September 13, 2025 |  at 09:30 AM)
-    - https://popovicu.com/posts/writing-an-operating-system-kernel-from-scratch/
 
 # link
 
@@ -31,8 +23,6 @@
 - [Rust Embedded기초 그림으로](#rust-embedded-기초)
   
 
-<hr>
-
 - [한국분의 실제 Rust Embedded 판매하는분](#러스트-한국-개발자-billmock-firmware)
 
 <hr>
@@ -44,6 +34,26 @@
 - [Rust is for Robotics](#rust-is-for-robotics)
 
 <hr>
+
+<hr>
+
+# **[Easy RISC-V: 대화형 RISC-V 어셈블리 프로그래밍 입문 튜토리얼](<https://news.hada.io/topic?id=23972&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+- **웹 브라우저에서 실행 가능한 에뮬레이터**를 통해 **RISC-V 어셈블리**를 단계별로 학습할 수 있는 대화형 튜토리얼로, Nick Morgan의 Easy 6502에서 영감을 받아 제작됨  
+- **RV32I_Zicsr 명령어 세트**의 45개 기본 명령어와 특권 아키텍처의 핵심 개념을 다루며, 컴파일러 타겟으로 충분히 완전한 명령어 세트를…
+
+<hr />
+
+# zig로 만든 커널
+- https://github.com/popovicu/zig-time-sharing-kernel
+- **[처음부터 직접 운영체제 커널 만들기](<https://news.hada.io/topic?id=23105&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+- **RISC-V 아키텍처**에서 **타임셰어링 운영체제 프로토타입 커널**을 구현한 경험을 공유  
+- **시분할(time-sharing) 커널**의 개념과 동작 방식을 실습 중심으로 설명하며, C 대신 **Zig**로 구현해 재현성을 높임  
+- 커널과 사용자 코드를 하나의 바이너리로 묶는 **unikernel** 접근을 취하고, 콘솔 출력과 타이…
+  - Writing an operating system kernel from scratch (Posted on: September 13, 2025 |  at 09:30 AM)
+    - https://popovicu.com/posts/writing-an-operating-system-kernel-from-scratch/
+
+<hr />
+
 
 # From Zero to Async in Embedded Rust | The Rusty Bits[|🔝|](#link)
 - https://youtu.be/wni5h5vIPhU?si=wxAhuE3DcKrs1Lta
