@@ -37,6 +37,11 @@ longterm: 	5.4.299 	2025-09-09
 linux-next: 	next-20250911 	2025-09-11
 ```
 
+# 커밋 보면서 커널 공부
+- 리눅스 커널 commit 보기
+  - https://lore.kernel.org/all/?t=20251105135512
+  - https://lore.kernel.org/all/
+
 # Kernel_dev_in_Rust[|🔝|](#link)
 https://docs.kernel.org/rust/quick-start.html
 
