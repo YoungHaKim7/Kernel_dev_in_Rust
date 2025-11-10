@@ -42,6 +42,8 @@ linux-next: 	next-20250911 	2025-09-11
   - https://lore.kernel.org/all/?t=20251105135512
   - https://lore.kernel.org/all/
 
+- [토발즈행님 메일헤더 분석 | 우분투한국커뮤니티](https://discourse.ubuntu-kr.org/t/topic/48700)
+
 # Kernel_dev_in_Rust[|🔝|](#link)
 https://docs.kernel.org/rust/quick-start.html
 
