@@ -13,6 +13,9 @@
   - 제10회 한국 리눅스 커널 개발자 모임(250918(목))
     - https://kernel-dev-ko.github.io/10th/
 
+# 최신 (러스트 Rust)커널 소식[|🔝|](#link)
+- [(251128)Rust For Linux Kernel Co-Maintainer Formally Steps Down](https://www.phoronix.com/news/Alex-Gaynor-Rust-Maintainer)
+
 # Do kernel maintainers support Rust in the kernel?
 - 출처 : https://rust-for-linux.com/rust-kernel-policy
 - Yes, there are key kernel maintainers that support Rust in the kernel.
