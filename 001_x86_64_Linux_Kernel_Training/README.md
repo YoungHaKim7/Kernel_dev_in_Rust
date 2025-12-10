@@ -21,6 +21,7 @@
     - [(230523) Getting to Know the Linux Kernel: A Beginner's Guide - Kelsey Steele & Nischala Yelchuri, Microsoft | The Linux Foundation](https://youtu.be/QatE61Ynwrw?si=5ISoYglI1PQdtlwV)
   - [(영상모아보기)Linux Kernel Exploitation Mahmoud Jadaan](https://youtube.com/playlist?list=PLDIsfsXZJWDNiQVSH3tmWrQWMmHc47Vtz&si=vZKfSHEpGSRJ4yRc)
   - [(영상모아보기) Building an OS | nanobyte](https://youtube.com/playlist?list=PLFjM7v6KGMpiH2G-kT781ByCNC_0pKpPN&si=b0rZrj8H_6bjYUmB)
+  - [(영상모아보기) Advent of Compiler Optimisations 2025 | Matt Godbolt](https://youtube.com/playlist?list=PL2HVqYf7If8cY4wLk7JUQ2f0JXY_xMQm2&si=tiSMKMa4laTZ_2Jz)
   - Arm
     - [240205 유료강의소개 (인프런-로드맵 |'Arm 아키텍처의 구조와 원리 저자 직강 강의'- 모두 업로드 완료! | Austin Kim](https://m.youtube.com/watch?si=DAzymb8g8F7JhQC0&v=9kOdb7w_PCU&feature=youtu.be)
   - [리눅스 커널의 존재 이유_간단히 설명 굿](https://youtube.com/shorts/ivyPFMZg4KI?si=4Qwqgt42CYHmC10s)
