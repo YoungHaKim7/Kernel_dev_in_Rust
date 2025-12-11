@@ -3,7 +3,11 @@
 
 <hr />
 
-# News[|🔝|](#link)
+# 최신 (러스트 Rust)커널 소식[|🔝|](#link)
+- [(251211)**[리눅스 커널에서의 Rust 실험 (성공적) 종료]](#251211리눅스-커널에서의-rust-실험-성공적-종료)
+- [(251128)Rust For Linux Kernel Co-Maintainer Formally Steps Down](https://www.phoronix.com/news/Alex-Gaynor-Rust-Maintainer)
+
+# 기타 News[|🔝|](#link)
 - [(유료 콘텐츠 250903)Tracking trust with Rust in the kernel](https://lwn.net/SubscriberLink/1034603/5dcfecdd5e3af0c2/)
 - 한글 영상
   - 리눅스 커널 변경 사항(v6.5 ~ v6.10)
@@ -12,9 +16,6 @@
     - [(241127)[9회 커널 개발자 모임] 1. kernel report (Part3) - 이현철 개발자님 Austin Kim](https://youtu.be/cnkdD1-pPsI?si=AAQXiSkcHTQXYASK)
   - 제10회 한국 리눅스 커널 개발자 모임(250918(목))
     - https://kernel-dev-ko.github.io/10th/
-
-# 최신 (러스트 Rust)커널 소식[|🔝|](#link)
-- [(251128)Rust For Linux Kernel Co-Maintainer Formally Steps Down](https://www.phoronix.com/news/Alex-Gaynor-Rust-Maintainer)
 
 # Do kernel maintainers support Rust in the kernel?
 - 출처 : https://rust-for-linux.com/rust-kernel-policy
@@ -45,9 +46,9 @@
 
 <hr />
 
-# 러스트 커널 접수 완료 👍
+# (251211)러스트 커널 접수 완료 👍[|🔝|](#link)
 
-# (251211)**[리눅스 커널에서의 Rust 실험 (성공적) 종료](<https://news.hada.io/topic?id=24987&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+# (251211)**[리눅스 커널에서의 Rust 실험 (성공적) 종료](<https://news.hada.io/topic?id=24987&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**[|🔝|](#link)
 - 리눅스 커널 내 **Rust 통합 작업**이 실험 단계를 마치고 **정식 구성 요소**로 인정됨  
 - 연례 **Maintainers Summit**에서 개발자들이 Rust 지원을 **영구적 기능으로 채택**하기로 합의  
 - 이에 따라 커널 내 Rust 관련 코드에서 **‘experimental’ 태그가 제거**될 예정  
