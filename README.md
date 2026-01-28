@@ -69,6 +69,7 @@ https://docs.kernel.org/rust/quick-start.html
 <hr />
 
 # Pin이거 죽어라 파야함
+- https://news.hada.io/topic?id=23716&utm_source=discord&utm_medium=bot&utm_campaign=1480
 - https://github.com/rust-lang/rust/pull/146307
 
 - Field Projection (필드 프로젝션)
