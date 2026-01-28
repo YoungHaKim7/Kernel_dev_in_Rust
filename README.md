@@ -68,6 +68,18 @@ https://docs.kernel.org/rust/quick-start.html
 
 <hr />
 
+# Pin이거 죽어라 파야함
+- https://github.com/rust-lang/rust/pull/146307
+
+- Field Projection (필드 프로젝션)
+  - 구조체 포인터에서 특정 필드 포인터를 추출하는 기능으로, C의 &(r->field) 표현을 Rust에서 일반화하려는 시도임
+  - 기존에는 참조(&) 와 *포인터(mut) 에서만 가능했으나, 사용자 정의 스마트 포인터에서는 제한이 있었음
+  - Rust for Linux는 이를 확장해, 모든 포인터 타입에서 동일 문법으로 필드 접근이 가능하도록 추진 중임
+  - 특히 Pin 타입(이동 불가 구조체)을 다루는 경우, 필드 투영 시 Pin<&mut Field> 또는 &mut Field 로 자동 변환되도록 설계됨
+  - 이 기능이 구현되면 RCU(Read-Copy-Update) 패턴을 Rust에서 안전하게 지원할 수 있어, 락(lock) 없이도 고성능 데이터 접근이 가능해짐
+  - 현재 GitHub의 [tracking issue](https://github.com/rust-lang/rust/pull/146307)에서 논의 중이며, Debian 14(2027) 이전 안정화를 목표로 함
+
+
 <hr />
 
 # Rust로 Linux커널 개발 관련 최신 소식[|🔝|](#link)
