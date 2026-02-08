@@ -161,9 +161,8 @@ ByteByteGo
 - https://youtu.be/GN3HezzYW8Y?si=GFWwchqYrNw2BbPL
 
 # 리눅스 커널 4Kbytes알뜰하게 설명[|🔝|](#link)
--  Linux Kernel 6.11 | Drama and 15X Part 1
-Maple Circuit
-  - https://youtu.be/NPJ7DzdysE4?si=oqkQdZww0zCpOwMG
+- [(240916)Linux Kernel 6.11 | Drama and 15X Part 1 | Maple Circuit](https://youtu.be/NPJ7DzdysE4?si=oqkQdZww0zCpOwMG)
+- [(240917)Linux Kernel 6.11 | Drama and 15X Part 2 | Maple Circuit](https://youtu.be/JCwHiNa_LZg?si=B3qyeiVlF9OLFOwx)
 
 # (2019년에만든거 _영상모아보기)Operating Systems | Computer Science Lessons[|🔝|](#link)
 - This is a selection of videos about operating systems including memory management and virtual memory, processor addressing modes, process scheduling, an the role of the call stack.
