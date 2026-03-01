@@ -1,6 +1,11 @@
+# Rust는 C++이 실패한 길로 가면 안된다. 조심하자 러스트
+- C++가 실패한걸 배우고 더 좋은 방법을 찾아야한다. 좋은 영상
+  - [260225) Why Rust Is Causing Tension in the Linux Kernel. | GaryH Tech](https://youtu.be/-XLuGB0wZ1M?si=kPjXKuDAidG3i6sn)
+
+
+<hr />
+
 # ABI 작동원리
-
-
 
 # ABI관련 정보의 글
 - **[우분투가 Rust를 사용한다는 것은 무엇을 의미할까?](<https://news.hada.io/topic?id=27028&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
