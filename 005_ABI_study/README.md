@@ -4,6 +4,8 @@
 
 - https://en.wikipedia.org/wiki/System_call#/media/File:Linux_kernel_interfaces.svg
 
+- [System Call | wiki에 잘 정리](https://en.wikipedia.org/wiki/System_call)
+
 # Rust는 C++이 실패한 길로 가면 안된다. 조심하자 러스트
 - C++가 실패한걸 배우고 더 좋은 방법을 찾아야한다. 좋은 영상
   - [260225) Why Rust Is Causing Tension in the Linux Kernel. | GaryH Tech](https://youtu.be/-XLuGB0wZ1M?si=kPjXKuDAidG3i6sn)
