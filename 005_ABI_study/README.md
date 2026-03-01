@@ -1,3 +1,9 @@
+# API vs ABI 차이점 이해
+
+<img width="960" height="720" alt="Image" src="https://github.com/user-attachments/assets/034359d7-5566-44a6-af51-39bc47ea7e80" />
+
+- https://en.wikipedia.org/wiki/System_call#/media/File:Linux_kernel_interfaces.svg
+
 # Rust는 C++이 실패한 길로 가면 안된다. 조심하자 러스트
 - C++가 실패한걸 배우고 더 좋은 방법을 찾아야한다. 좋은 영상
   - [260225) Why Rust Is Causing Tension in the Linux Kernel. | GaryH Tech](https://youtu.be/-XLuGB0wZ1M?si=kPjXKuDAidG3i6sn)
