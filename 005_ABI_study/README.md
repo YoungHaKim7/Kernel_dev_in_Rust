@@ -1,1 +1,25 @@
 # ABI 작동원리
+
+
+
+# ABI관련 정보의 글
+- **[우분투가 Rust를 사용한다는 것은 무엇을 의미할까?](<https://news.hada.io/topic?id=27028&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+- Ubuntu의 **Rust 도입**은 기술 채택 주기에서 Rust가 **얼리 어답터에서 캐즘을 넘어 주류 단계로 이동**하고 있음을 보여줌  
+- Canonical은 Rust를 **새로운 기반 소프트웨어의 기본 언어**로 채택하여 C, C++, 일부 Python 사용을 대체하고 있으며, 메모리 안전 유틸리티 개발에 재정·명성 양면으로 투자 중  
+- 초…
+
+# (251121)How the Linux User/Kernel ABI Really Works - Greg Law - C++Now 2025
+CppNow
+- https://youtu.be/5UkVl0xK-3E?si=rojO_dwDIylEAx2q
+
+# CS 3214: ABI mini lecture
+Matthew Hicks
+https://youtu.be/8pwbFFBmM-k?si=cSr5SLOSYFxaUm9V
+
+# What Is an ABI, and Why Should You Care? - Shung-Hsi Yu, SUSE
+The Linux Foundation
+- https://youtu.be/90fwlfon3Hk?si=n9ERHFR7zymhtwo9
+
+# (160116)Syscalls, Kernel vs. User Mode and Linux Kernel Source Code - bin 0x09
+LiveOverflow
+- https://youtu.be/fLS99zJDHOc?si=Ws5roHzcde28qukl
