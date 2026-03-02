@@ -19,7 +19,7 @@
 
 - Rust ABI의 현황과 안정화 시 변경될 사항 (Reddit자료 2025년자료)
   - 러스트는 일부러 ABI안정화를 늦추고 있음.(C언어도 문제가 많구만. 어째튼 함부로 안정화 할 필요 없는듯~~) 
-  - https://www.reddit.com/r/rust/comments/1hnblpt/status_of_the_rust_abi_and_what_is_going_to/?tl=ko
+  - [(2025년 글) Status of the Rust ABI and What Is Going to Change When It's Stabilized](https://www.reddit.com/r/rust/comments/1hnblpt/status_of_the_rust_abi_and_what_is_going_to/?tl=ko)
 
 <hr />
 
