@@ -6,6 +6,10 @@
 
 - [System Call | wiki에 잘 정리](https://en.wikipedia.org/wiki/System_call)
 
+# ABI란 무엇인가
+- [(180507)Application Binary Interface (ABI) Docs and Their Meaning](https://kaiwantech.wordpress.com/2018/05/07/application-binary-interface-abi-docs-and-their-meaning/)
+  - [(2025년 글) What's up with Rust ABI?](https://www.reddit.com/r/learnrust/comments/1irl30d/whats_up_with_rust_abi/)
+
 # Rust는 C++이 실패한 길로 가면 안된다. 조심하자 러스트
 - C++가 실패한걸 배우고 더 좋은 방법을 찾아야한다. 좋은 영상
   - [260225) Why Rust Is Causing Tension in the Linux Kernel. | GaryH Tech](https://youtu.be/-XLuGB0wZ1M?si=kPjXKuDAidG3i6sn)
