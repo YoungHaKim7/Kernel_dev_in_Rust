@@ -10,6 +10,12 @@
 - C++가 실패한걸 배우고 더 좋은 방법을 찾아야한다. 좋은 영상
   - [260225) Why Rust Is Causing Tension in the Linux Kernel. | GaryH Tech](https://youtu.be/-XLuGB0wZ1M?si=kPjXKuDAidG3i6sn)
 
+# Rust만의 길을 걷고 있는 ABI
+- https://rust-lang.github.io/rust-project-goals/2025h1/safe-linking.html
+
+- Rust ABI의 현황과 안정화 시 변경될 사항 (Reddit자료 2025년자료)
+  - 러스트는 일부러 ABI안정화를 늦추고 있음.(C언어도 문제가 많구만. 어째튼 함부로 안정화 할 필요 없는듯~~) 
+  - https://www.reddit.com/r/rust/comments/1hnblpt/status_of_the_rust_abi_and_what_is_going_to/?tl=ko
 
 <hr />
 
