@@ -6,7 +6,7 @@
 
 <hr />
 
-# 15 Legendary Bit Hacks
+# 15 Legendary Bit Hacks[|🔝|](#link)
 
 | #  | Expression                         | Purpose                        |                               |
 | -- | ---------------------------------- | ------------------------------ | ----------------------------- |
@@ -27,7 +27,7 @@
 | 15 | `x -= ((x >> 1) & 0x55555555)`     | fast bit count (popcount step) |                               |
 
 
-## 1. Clear lowest set bit
+## 1. Clear lowest set bit[|🔝|](#link)
 
 ```c
 x & (x - 1)
@@ -43,7 +43,7 @@ result = 101000
 
 - Used for bit counting loops.
 
-## 2. Extract lowest set bit
+## 2. Extract lowest set bit[|🔝|](#link)
 
 ```c
 x & -x
@@ -61,7 +61,7 @@ x & -x
   - memory allocators
   - bitboards
 
-## 3. Check power of two
+## 3. Check power of two[|🔝|](#link)
 
 ```c
 (x & (x - 1)) == 0
@@ -81,4 +81,19 @@ x & -x
   - memory alignment
   - ring buffers
  
-## 
+## 4. Set bits below lowest set bit[|🔝|](#link)
+
+```c
+x | (x - 1)
+```
+
+Example
+```
+101100
+→
+101111
+```
+
+## [|🔝|](#link)
+
+## [|🔝|](#link)
