@@ -61,6 +61,28 @@ x & -x
   - memory allocators
   - bitboards
 
+- Rust연습
+
+```rs
+fn main() {
+    let x = 44;        // 0010 1100
+
+    let res = x & -x;
+    let minus_x = -x;  // 1101 0100
+    println!("{res}"); // 0000 0100
+    println!("4(dec) : 0b{:08b}", res as u8); // 0000 0100
+    println!("-x binary : 0b{:08b}", minus_x as u8);
+}
+```
+
+- result
+
+```bash
+4
+4(dec)    : 0b0000 0100
+-x binary : 0b1101 0100
+```
+
 ## 3. Check power of two[|🔝|](#link)
 
 ```c
