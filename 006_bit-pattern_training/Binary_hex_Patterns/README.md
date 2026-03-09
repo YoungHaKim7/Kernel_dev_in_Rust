@@ -297,6 +297,14 @@ binary:  1011
 gray:    1110
 ```
 
+### 쓰이는곳
+- Property:
+- Only one bit changes between consecutive numbers, which is why Gray code is used in:
+    - rotary encoders
+    - Karnaugh maps
+    - digital circuits
+    - error-resistant counters
+
 
 ## [|🔝|](#link)
 ## [|🔝|](#link)
