@@ -4,6 +4,8 @@
   - [1. Clear lowest set bit]
   - [2. Extract lowest set bit]
 
+- [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
+
 <hr />
 
 # 2진수 이쁘게 출력하기
