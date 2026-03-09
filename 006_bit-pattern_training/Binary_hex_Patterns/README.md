@@ -317,6 +317,7 @@ gray:    1110
 ```
 
 ### 쓰이는곳
+
 - Property:
 - Only one bit changes between consecutive numbers, which is why Gray code is used in:
   - rotary encoders
@@ -325,6 +326,63 @@ gray:    1110
   - error-resistant counters
 
 
+## 8. Gray → Binary[|🔝|](#link)
+
+```c
+// main.c
+b = g
+b ^= b >> 1
+b ^= b >> 2
+b ^= b >> 4
+b ^= b >> 8
+b ^= b >> 16
+```
+
+Used in hardware decoding.
+
+- Rust Code로 연습
+
+```rs
+fn gray_to_binary(mut b: u32) -> u32 {
+    b ^= b >> 1;
+    b ^= b >> 2;
+    b ^= b >> 4;
+    b ^= b >> 8;
+    b ^= b >> 16;
+    b
+}
+
+fn main() {
+    let gray: u32 = 0b1110; // Gray code
+    let binary = gray_to_binary(gray);
+
+    println!("gray   : {:04b}", gray);
+    println!("binary : {:04b}", binary);
+}
+```
+
+- result
+
+```bash
+gray   : 1110
+binary : 1011
+```
+
+- 똑같은 기능(이게 더 눈에 들어온다.ㅋ)
+
+```rs
+fn gray_to_binary(mut x: u32) -> u32 {
+    let mut shift = 1;
+    while shift < 32 {
+        x ^= x >> shift;
+        shift <<= 1;
+    }
+    x
+}
+```
+
+## [|🔝|](#link)
+## [|🔝|](#link)
 ## [|🔝|](#link)
 ## [|🔝|](#link)
 ## [|🔝|](#link)
