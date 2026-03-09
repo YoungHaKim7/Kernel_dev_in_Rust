@@ -6,6 +6,26 @@
 
 <hr />
 
+# 2진수 이쁘게 출력하기
+
+```rs
+fn format_bin8(x: u8) -> String {
+    let s = format!("{:08b}", x);
+    format!("0b{} {}", &s[0..4], &s[4..8])
+}
+
+fn main() {
+    let x: u8 = 4;
+    println!("{}", format_bin8(x));
+}
+```
+
+- result
+
+```bash
+0b0000 0100
+```
+
 # 15 Legendary Bit Hacks[|🔝|](#link)
 
 | #  | Expression                         | Purpose                        |                               |
