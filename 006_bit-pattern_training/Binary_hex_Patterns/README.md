@@ -249,8 +249,55 @@ fn main() {
 16  # 0001 0000
 ```
 
+# XOR operator truth table
 
-## [|🔝|](#link)
+|x|y|x XOR y|
+|-|-|-|
+|0|	0 |0|
+|0|	1|	1|
+|1|	0 |1|
+|1|	1|	0|
+
+## 7. Binary → Gray code [|🔝|](#link)
+
+```c
+// main.c
+gray = x ^ (x >> 1)
+```
+
+- Example
+
+```bash
+binary:  1011
+gray:    1110
+```
+
+- rust code로 연습
+
+```rs
+fn bin4(x: u8) -> String {
+    format!("{:04b}", x)
+}
+
+fn main() {
+    let binary = 11; // 1011
+    //        x >> 1 // 0101
+    //   x ^ (x >>1) // 1110
+    let gray = binary ^ (binary >> 1);
+
+    println!("x    : {}", bin4(binary));
+    println!("gray : {}", bin4(gray));
+}
+```
+
+- result
+
+```bash
+binary:  1011
+gray:    1110
+```
+
+
 ## [|🔝|](#link)
 ## [|🔝|](#link)
 ## [|🔝|](#link)
