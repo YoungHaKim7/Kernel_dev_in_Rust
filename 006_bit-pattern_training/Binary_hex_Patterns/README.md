@@ -1,9 +1,17 @@
+# link
+
+- [15 Legendary Bit Hacks]
+  - [1. Clear lowest set bit]
+  - [2. Extract lowest set bit]
+
+<hr />
+
 # 15 Legendary Bit Hacks
 
 | #  | Expression                         | Purpose                        |                               |
 | -- | ---------------------------------- | ------------------------------ | ----------------------------- |
-| 1  | `x & (x - 1)`                      | clear lowest set bit           |                               |
-| 2  | `x & -x`                           | extract lowest set bit         |                               |
+| 1  | `x & (x - 1)`                      | [clear lowest set bit]           |                               |
+| 2  | `x & -x`                           | [extract lowest set bit]         |                               |
 | 3  | `(x & (x - 1)) == 0`               | check power of two             |                               |
 | 4  | `x                                 | (x - 1)`                       | set bits below lowest set bit |
 | 5  | `x & (x + 1)`                      | clear trailing ones            |                               |
@@ -19,7 +27,7 @@
 | 15 | `x -= ((x >> 1) & 0x55555555)`     | fast bit count (popcount step) |                               |
 
 
-# 1. Clear lowest set bit
+## 1. Clear lowest set bit
 
 ```c
 x & (x - 1)
@@ -34,3 +42,43 @@ result = 101000
 ```
 
 - Used for bit counting loops.
+
+## 2. Extract lowest set bit
+
+```c
+x & -x
+```
+
+- Example
+
+```bash
+101100
+000100
+```
+
+- Used in
+  - Fenwick trees
+  - memory allocators
+  - bitboards
+
+## 3. Check power of two
+
+```c
+(x & (x - 1)) == 0
+```
+
+- Example
+
+```bash
+100000
+&
+011111
+= 0
+```
+
+- Used everywhere:
+  - kernel page sizes
+  - memory alignment
+  - ring buffers
+ 
+## 
