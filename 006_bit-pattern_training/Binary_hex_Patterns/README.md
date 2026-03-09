@@ -32,10 +32,10 @@ fn main() {
 
 | #  | Expression                         | Purpose                        |      쓰이는 곳                |
 | -- | ---------------------------------- | ------------------------------ | ----------------------------- |
-| 1  | `x & (x - 1)`                      | [clear lowest set bit]           |                               |
-| 2  | `x & -x`                           | [extract lowest set bit]         |                               |
-| 3  | `(x & (x - 1)) == 0`               | check power of two             |                               |
-| 4  | `x | (x - 1)`                      | set bits below lowest set bit |                                |
+| 1  | `x & (x - 1)`                      | [clear lowest set bit]           |  Used for bit counting loops.|
+| 2  | `x & -x`                           | [extract lowest set bit]         |  Fenwick trees<br />memory allocators<br />bitboards <br />chess engines <br />graphics engines <br />compilers <br />allocators                            |
+| 3  | `(x & (x - 1)) == 0`               | check power of two             |   kernel page sizes<br />memory alignment <br />ring buffers|
+| 4  | `x \| (x - 1)`                     | set bits below lowest set bit |                                |
 | 5  | `x & (x + 1)`                      | clear trailing ones            |                               |
 | 6  | `~x & (x + 1)`                     | isolate lowest zero bit        |                               |
 | 7  | `x ^ (x >> 1)`                     | binary → Gray code             |                               |
@@ -43,11 +43,30 @@ fn main() {
 | 9  | `x >> n & 1`                       | test nth bit                   |                               |
 | 10 | `x ^ (1 << n)`                     | toggle bit                     |                               |
 | 11 | `x & ~(1 << n)`                    | clear bit                      |                               |
-| 12 | `x | (1 << n)`                     | set bit                       |                                |
+| 12 | `x \| (1 << n)`                     | set bit                       |                                |
 | 13 | `(x + (1 << n)) & ~((1 << n) - 1)` | align to power-of-two boundary |                               |
 | 14 | `(x + y) ^ ((x ^ y) & -(x < y))`   | branchless min/max             |                               |
 | 15 | `x -= ((x >> 1) & 0x55555555)`     | fast bit count (popcount step) |                               |
 
+
+# Why programmers group bits in 4
+
+- Because 1 hex digit = 4 bits
+
+- Example:
+
+```bash
+0000 0100  = 0x04 = 4(decimal)
+0010 1100  = 0x2C = 44(decimal)
+1111 1111  = 0xFF = 255(decimal)
+```
+
+- So this format makes debugging:
+  - CPU registers
+  - kernel bitmasks
+  - network packets
+  - SIMD values
+- much easier.
 
 ## 1. Clear lowest set bit[|🔝|](#link)
 
