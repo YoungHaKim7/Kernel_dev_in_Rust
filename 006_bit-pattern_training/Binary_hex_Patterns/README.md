@@ -56,9 +56,9 @@ x & (x - 1)
 - Example
 
 ```bash
-x      = 101100
-x - 1  = 101011
-result = 101000
+x      = 101100    # 0x2C    44(10dec)
+x - 1  = 101011    # 0x2B    43(10dec)
+result = 101000    # 0x14    20(10dec)
 ```
 
 - Used for bit counting loops.
@@ -85,22 +85,35 @@ x & -x
 
 ```rs
 fn main() {
-    let x = 44;        // 0010 1100
-
+    let x = 44;        // 0010 1100    // 0x2C
+                      //  1101 0100  -x = -44 
     let res = x & -x;
-    let minus_x = -x;  // 1101 0100
-    println!("{res}"); // 0000 0100
+    let res02 = x & !x;
+    let res03 = x | !x;
+    let minus_x = -x;  // 1101 0100    // -44(10dec)
+    let nagative_x = !x;
+    println!("res : {res}"); // 0000 0100
+    println!("res02 : {res02}");
+    println!("res03 : {res03}");
+    println!("minus_x : {minus_x}");
+    println!("minus_x : {:08b}", minus_x as u8);
+    println!("nagative_x : {nagative_x}");
     println!("4(dec) : 0b{:08b}", res as u8); // 0000 0100
-    println!("-x binary : 0b{:08b}", minus_x as u8);
+    println!("-x(44dec) binary : 0b{:08b}", minus_x as u8);
 }
 ```
 
 - result
 
 ```bash
-4
-4(dec)    : 0b0000 0100
--x binary : 0b1101 0100
+res : 4
+res02 : 0
+res03 : -1
+minus_x : -44
+minus_x : 11010100
+nagative_x : -45
+4(dec) : 0b00000100
+-x(44dec) binary : 0b11010100
 ```
 
 ## 3. Check power of two[|🔝|](#link)
