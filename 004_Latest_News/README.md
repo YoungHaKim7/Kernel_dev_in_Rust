@@ -1,5 +1,7 @@
 # link
 
+- [Rust unstable features needed for the kernel #2](https://github.com/Rust-for-Linux/linux/issues/2)
+
 
 <hr />
 
