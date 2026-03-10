@@ -5,21 +5,19 @@
 - [15 Legendary Bit Hacks](#15-legendary-bit-hacks)
   - [1. Clear lowest set bit](#1-clear-lowest-set-bit)
   - [2. Extract lowest set bit](#2-extract-lowest-set-bit)
-  - [3. Check power of two](3-check-power-of-two)
+  - [3. Check power of two](#3-check-power-of-two)
   - [4. Set bits below lowest set bit](#4-set-bits-below-lowest-set-bit)
   - [5. Clear trailing ones](#5-clear-trailing-ones-)
   - [6. Find lowest zero bit](#6-find-lowest-zero-bit-)
   - [7. Binary → Gray code](#7-binary--gray-code-)
   - [8. Gray → Binary](#8-gray--binary)
   - [9. Test bit](#9-test-bit-)
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
+  - [10. Toggle bit](#10-toggle-bit)
+  - [11. Clear bit](#11-clear-bit)
+  - [12. Set bit](#12-set-bit-)
+  - [13. Align to power-of-two boundary]()
+  - [14. Branchless min/max]()
+  - [15. Fast popcount step]()
 
 - [(외부링크) Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
 
@@ -119,7 +117,7 @@ fn main() {
 | 15 | `x -= ((x >> 1) & 0x55555555)`     | fast bit count (popcount step) |Part of the SWAR popcount algorithm.<br /> Counts bits in parallel inside a register. |
 
 
-# Why programmers group bits in 4
+# Why programmers group bits in 4[|🔝|](#link)
 
 - Because 1 hex digit = 4 bits
 
@@ -607,15 +605,32 @@ fn main() {
 45
 ```
 
-## [|🔝|](#link)
+## 13. Align to power-of-two boundary[|🔝|](#link)
 
 ```c
-
+// main.c 
+(x + (a - 1)) & ~(a - 1)
 ```
+
+- is a very famous systems-programming trick used to align a number x up to the nearest multiple of a, where a is typically a power of two.
+
+- Example align to 16
 
 ```bash
-
+x = 37
+→ 48
 ```
+- Used in:
+  - memory allocators
+  - page alignment
+  - kernel slabs
+
+
+- This appears in:
+  - OS kernels
+  - memory allocators
+  - page alignment
+  - SIMD buffers
 
 ```rs
 
