@@ -1,6 +1,7 @@
 # link
 
 - [Why programmers group bits in 4](#why-programmers-group-bits-in-4)
+- [Real kernel example(13번 참고하면됨.]()
 
 - [15 Legendary Bit Hacks](#15-legendary-bit-hacks)
   - [1. Clear lowest set bit](#1-clear-lowest-set-bit)
@@ -94,6 +95,45 @@ fn main() {
 |0|	1|	1|
 |1|	0 |1|
 |1|	1|	0|
+
+
+# Real kernel example(13번 참고하면됨. | 13. Align to power-of-two boundary)[|🔝|](#link)
+- [13. Align to power-of-two boundary](#13-align-to-power-of-two-boundary)
+
+Linux uses similar macros:
+
+```c
+// macro_c_lang.c
+#define ALIGN(x, a) (((x) + (a) - 1) & ~((a) - 1))
+```
+
+- Example:
+
+```bash
+ALIGN(13,8) = 16
+ALIGN(16,8) = 16
+ALIGN(17,8) = 24
+```
+
+- Rust version used in allocators
+
+```rs
+// main.rs
+fn align_up(x: usize, align: usize) -> usize {
+    debug_assert!(align.is_power_of_two());
+    (x + align - 1) & !(align - 1)
+}
+```
+
+- The `debug_assert!` ensures correctness.
+
+## Related famous alignment tricks
+
+| Purpose       | Expression               |
+| ------------- | ------------------------ |
+| align up      | `(x + a - 1) & !(a - 1)` |
+| align down    | `x & !(a - 1)`           |
+| check aligned | `x & (a - 1) == 0`       |
 
 
 # 15 Legendary Bit Hacks[|🔝|](#link)
