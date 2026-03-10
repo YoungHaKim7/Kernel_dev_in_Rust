@@ -1,20 +1,39 @@
 # link
 
-- [15 Legendary Bit Hacks]
-  - [1. Clear lowest set bit]
-  - [2. Extract lowest set bit]
+- [Why programmers group bits in 4](#why-programmers-group-bits-in-4)
 
-- [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
+- [15 Legendary Bit Hacks](#15-legendary-bit-hacks)
+  - [1. Clear lowest set bit](#1-clear-lowest-set-bit)
+  - [2. Extract lowest set bit](#2-extract-lowest-set-bit)
+  - [3. Check power of two](3-check-power-of-two)
+  - [4. Set bits below lowest set bit](#4-set-bits-below-lowest-set-bit)
+  - [5. Clear trailing ones](#5-clear-trailing-ones-)
+  - [6. Find lowest zero bit](#6-find-lowest-zero-bit-)
+  - [7. Binary → Gray code](#7-binary--gray-code-)
+  - [8. Gray → Binary](#8-gray--binary)
+  - [9. Test bit](#9-test-bit-)
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+
+- [(외부링크) Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
+
+- [Boolean Logic](#boolean-logic)
 
 - Operator Truth Table 기초
-  - [AND]
-  - [OR]
-  - [XOR]
-  - [NOT]
+  - [NOT](#not-operator-truth-table)
+  - [AND](#and-operator-truth-table)
+  - [OR](#or--operator-truth-table)
+  - [XOR](#xor-operator-truth-table)
 
 <hr />
 
-# 2진수 이쁘게 출력하기
+# 2진수 이쁘게 출력하기[|🔝|](#link)
 
 ```rs
 fn format_bin8(x: u8) -> String {
@@ -34,7 +53,7 @@ fn main() {
 0b0000 0100
 ```
 
-# Boolean Logic
+# Boolean Logic[|🔝|](#link)
 - https://introcs.cs.princeton.edu/java/71boolean/
 
 ||logic|java boolean|java bitwise|circuit design|
@@ -44,14 +63,14 @@ fn main() {
 |OR|$x\lor y$|x \|\| y|x \| y| x+y|
 |XOR|$x \oplus y$|x ^ y|x ^ y|$x \oplus y$|
 
-# NOT operator truth table
+# NOT operator truth table[|🔝|](#link)
 
 |x|x'|
 |-|-|
 |0|	1 |
 |1|	0|
 
-# AND operator truth table
+# AND operator truth table[|🔝|](#link)
 
 |x|y|x AND y|
 |-|-|-|
@@ -60,7 +79,7 @@ fn main() {
 |1|	0 |0|
 |1|	1 |1|
 
-# OR  operator truth table
+# OR  operator truth table[|🔝|](#link)
 
 |x|y|x OR y|
 |-|-|-|
@@ -69,7 +88,7 @@ fn main() {
 |1|	0 |1|
 |1|	1 |1|
 
-# XOR operator truth table
+# XOR operator truth table[|🔝|](#link)
 
 |x|y|x XOR y|
 |-|-|-|
@@ -478,7 +497,7 @@ fn main() {
 1
 ```
 
-## 10. Toggle bit
+## 10. Toggle bit[|🔝|](#link)
 
 ```c
 // main.c
