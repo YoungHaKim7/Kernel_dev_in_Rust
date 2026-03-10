@@ -3,6 +3,7 @@
 - [Why programmers group bits in 4](#why-programmers-group-bits-in-4)
 
 - [Real kernel example(13번 참고하면됨.](#real-kernel-example13번-참고하면됨--13-align-to-power-of-two-boundary)
+  - [`align up` vs `align down` vs `check aligned`](#related-famous-alignment-tricks)
 
 - [15 Legendary Bit Hacks](#15-legendary-bit-hacks)
   - [1. Clear lowest set bit](#1-clear-lowest-set-bit)
