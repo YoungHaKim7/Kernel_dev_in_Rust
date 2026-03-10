@@ -66,14 +66,14 @@ fn main() {
 
 # NOT operator truth table[|🔝|](#link)
 
-|x|x'|
+|x|x'<br />$\neg x$<br />~x<br />!x|
 |-|-|
 |0|	1 |
 |1|	0|
 
 # AND operator truth table[|🔝|](#link)
 
-|x|y|x AND y|
+|x|y|x AND y<br />xy<br />$x\land y$<br />x && y|
 |-|-|-|
 |0|	0 |0|
 |0|	1 |0|
@@ -82,7 +82,7 @@ fn main() {
 
 # OR  operator truth table[|🔝|](#link)
 
-|x|y|x OR y|
+|x|y|x OR y<br />x+y<br />$x\lor y$<br />x \|\| y|
 |-|-|-|
 |0|	0 |0|
 |0|	1 |1|
@@ -91,7 +91,7 @@ fn main() {
 
 # XOR operator truth table[|🔝|](#link)
 
-|x|y|x XOR y|
+|x|y|x XOR y<br />$x \oplus y$<br />x ^ y|
 |-|-|-|
 |0|	0 |0|
 |0|	1|	1|
