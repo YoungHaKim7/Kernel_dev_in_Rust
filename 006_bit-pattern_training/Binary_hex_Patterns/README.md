@@ -6,6 +6,12 @@
 
 - [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
 
+- Operator Truth Table 기초
+  - [AND]
+  - [OR]
+  - [XOR]
+  - [NOT]
+
 <hr />
 
 # 2진수 이쁘게 출력하기
@@ -27,6 +33,51 @@ fn main() {
 ```bash
 0b0000 0100
 ```
+
+# Boolean Logic
+- https://introcs.cs.princeton.edu/java/71boolean/
+
+||logic|java boolean|java bitwise|circuit design|
+|-|-|-|-|-|
+|NOT|$\neg x$|!x|~x|x'|
+|AND|$x\land y$|x && y|x & y|xy|
+|OR|$x\lor y$|x \|\| y|x \| y| x+y|
+|XOR|$x \oplus y$|x ^ y|x ^ y|$x \oplus y$|
+
+# NOT operator truth table
+
+|x|x'|
+|-|-|
+|0|	1 |
+|1|	0|
+
+# AND operator truth table
+
+|x|y|x AND y|
+|-|-|-|
+|0|	0 |0|
+|0|	1 |0|
+|1|	0 |0|
+|1|	1 |1|
+
+# OR  operator truth table
+
+|x|y|x OR y|
+|-|-|-|
+|0|	0 |0|
+|0|	1 |1|
+|1|	0 |1|
+|1|	1 |1|
+
+# XOR operator truth table
+
+|x|y|x XOR y|
+|-|-|-|
+|0|	0 |0|
+|0|	1|	1|
+|1|	0 |1|
+|1|	1|	0|
+
 
 # 15 Legendary Bit Hacks[|🔝|](#link)
 
@@ -105,6 +156,8 @@ x & -x
 - Rust연습
 
 ```rs
+// main.rs
+
 fn main() {
     let x = 44;        // 0010 1100    // 0x2C
                       //  1101 0100  -x = -44 
@@ -160,6 +213,8 @@ nagative_x : -45
 - rust코드로 연습
 
 ```rs
+// main.rs
+
 fn main() {
     let x = 47; // 0010 1111
     //&(x-1) dec 46  // 0010 1110
@@ -191,6 +246,8 @@ Example
 - Rust code로 연습
 
 ```rs
+// main.rs
+
 fn main() {
     let x = 44; // 0010 1100
 // (x-1) dec 43 // 0010 1011
@@ -223,6 +280,8 @@ x & (x + 1)
 - rust로 연습
 
 ```rs
+// main.rs
+
 fn main() {
     let x = 47; //      0010 1111
     //&(x+1) dec 48  // 0011 0000
@@ -238,8 +297,6 @@ fn main() {
 32 # 0010 0000
 ```
 
-
-
 ## 6. Find lowest zero bit [|🔝|](#link)
 
 ```c
@@ -252,6 +309,8 @@ fn main() {
 - rust코드로 연습
 
 ```rs
+// main.rs
+
 fn main() {
     let x = 47; // 0010 1111
     // !x            // 1101 0000
@@ -267,15 +326,6 @@ fn main() {
 ```bash
 16  # 0001 0000
 ```
-
-# XOR operator truth table
-
-|x|y|x XOR y|
-|-|-|-|
-|0|	0 |0|
-|0|	1|	1|
-|1|	0 |1|
-|1|	1|	0|
 
 ## 7. Binary → Gray code [|🔝|](#link)
 
@@ -294,6 +344,8 @@ gray:    1110
 - rust code로 연습
 
 ```rs
+// main.rs
+
 fn bin4(x: u8) -> String {
     format!("{:04b}", x)
 }
@@ -343,6 +395,8 @@ Used in hardware decoding.
 - Rust Code로 연습
 
 ```rs
+// main.rs
+
 fn gray_to_binary(mut b: u32) -> u32 {
     b ^= b >> 1;
     b ^= b >> 2;
@@ -371,6 +425,8 @@ binary : 1011
 - 똑같은 기능(이게 더 눈에 들어온다.ㅋ)
 
 ```rs
+// main.rs
+
 fn gray_to_binary(mut x: u32) -> u32 {
     let mut shift = 1;
     while shift < 32 {
@@ -381,6 +437,236 @@ fn gray_to_binary(mut x: u32) -> u32 {
 }
 ```
 
+## 9. Test bit [|🔝|](#link)
+
+```c
+// main.c
+(x >> n) & 1
+```
+
+- Example
+
+```bash
+x = 101101
+n = 2
+→ 1
+```
+
+- Used in:
+  - CPU flags
+  - protocol parsers
+
+- Rust code로 연습
+
+```rs
+// main.rs
+
+fn main() {
+    let n = 2; //  0000 0010
+    let x = 45; // 0010 1101
+    // 1             // 0000 0001
+    //&(x >> 2)dec11 // 0000 1011
+    //       dec 1   // 0000 0001
+    let res = (x >> n) & 1;
+    println!("{res}");
+}
+```
+
+- result
+
+```bash
+1
+```
+
+## 10. Toggle bit
+
+```c
+// main.c
+x ^ (1 << n)
+```
+
+```bash
+101100
+toggle bit2
+→ 101000
+```
+
+```rs
+// main.rs
+
+fn main() {
+    let n = 2; //  0000 0010
+    let x = 44; // 0010 1100
+//   let x: u8 = 0b101100; 44dec
+    // 1             // 0000 0001
+    // XOR ^
+    //^(1 >> 2)dec11 // 0000 0100
+    //       dec 1   // 0000 0001
+    // res      40   // 0010 1000
+    let res = x ^ (1 << n);
+    println!("{res}");
+}
+```
+
+- result
+
+```bash
+40
+```
+
+## 11. Clear bit[|🔝|](#link)
+
+```c
+// main.c
+x & ~(1 << n)
+```
+
+- Rust Code로 연습
+
+```rs
+// main.rs
+
+fn main() {
+    let negative_x = !(1 << 2);
+    let n = 2; //   0000 0010
+    let x = 45; //  0010 1101
+    //  1            //  0000 0001
+    // (1 << 2) 4dec //  0000 0100
+    //\!(1 << 2)-5dec//  1111 1101
+    //&!(1 << 2)     //  0000 1011
+    //  res  41 dec  //  0010 1001
+    let res = x & !(1 << n);
+    println!("{negative_x}");
+    println!("negative x binariy : {:8b}", negative_x as u8);
+    println!("{res}");
+}
+
+```
+
+- result
+
+```bash
+-5
+negative x binari : 11111011
+41
+```
+
+## 12. Set bit [|🔝|](#link)
+
+```c
+// main.c
+x | (1 << n)
+```
+
+- Example
+
+```bash
+101000
+set bit2
+→ 101100
+```
+
+
+```rs
+// main.rs
+
+fn main() {
+    //         1dec //   0000 0001
+    let n = 2; //   0000 0010
+    let x = 45; //  0010 1101
+    // (1 << 2) 4dec //  0000 0100
+    //| (1 << 2)     //
+    //  res  45 dec  //  0010 1101
+    let res = x | (1 << n);
+    println!("{res}");
+}
+```
+
+- result
+
+```bash
+45
+```
+
+## [|🔝|](#link)
+
+```c
+
+```
+
+```bash
+
+```
+
+```rs
+
+```
+
+- result
+
+```bash
+
+```
+
+## [|🔝|](#link)
+
+```c
+// main.c
+
+
+```
+
+
+```rs
+
+```
+
+- result
+
+```bash
+
+```
+
+## [|🔝|](#link)
+
+```c
+// main.c
+
+
+```
+
+
+```rs
+
+```
+
+- result
+
+```bash
+
+```
+
+## [|🔝|](#link)
+
+```c
+// main.c
+
+
+```
+
+
+```rs
+
+```
+
+- result
+
+```bash
+
+```
+
+
+## [|🔝|](#link)
 ## [|🔝|](#link)
 ## [|🔝|](#link)
 ## [|🔝|](#link)
