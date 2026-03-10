@@ -15,7 +15,7 @@
   - [10. Toggle bit](#10-toggle-bit)
   - [11. Clear bit](#11-clear-bit)
   - [12. Set bit](#12-set-bit-)
-  - [13. Align to power-of-two boundary]()
+  - [13. Align to power-of-two boundary](#13-align-to-power-of-two-boundary)
   - [14. Branchless min/max]()
   - [15. Fast popcount step]()
 
@@ -631,6 +631,8 @@ x = 37
   - memory allocators
   - page alignment
   - SIMD buffers
+
+- Rust Code로 연습하기
 
 ```rs
 // (a - 1) // 7  , a = 8
