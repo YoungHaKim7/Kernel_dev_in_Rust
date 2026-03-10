@@ -142,19 +142,19 @@ fn align_up(x: usize, align: usize) -> usize {
 
 | #  | Expression                         | Purpose                        |      쓰이는 곳                |
 | -- | ---------------------------------- | ------------------------------ | ----------------------------- |
-| 1  | `x & (x - 1)`                      | [clear lowest set bit]           |  Used for bit counting loops.|
-| 2  | `x & -x`                           | [extract lowest set bit]         |  Fenwick trees<br />memory allocators<br />bitboards <br />chess engines <br />graphics engines <br />compilers <br />allocators                            |
-| 3  | `(x & (x - 1)) == 0`               | check power of two             |   kernel page sizes<br />memory alignment <br />ring buffers|
-| 4  | `x \| (x - 1)`                     | set bits below lowest set bit |                                |
-| 5  | `x & (x + 1)`                      | clear trailing ones            |                               |
-| 6  | `~x & (x + 1)`                     | isolate lowest zero bit        |                               |
-| 7  | `x ^ (x >> 1)`                     | binary → Gray code             |  rotary encoders<br /> hardware counters<br />error correction |
-| 8  | `x ^ (x >> 1) ^ (x >> 2) ...`      | Gray → binary                  | Used in hardware decoding.  |
-| 9  | `x >> n & 1`                       | test nth bit                   | CPU flags<br />protocol parsers|
-| 10 | `x ^ (1 << n)`                     | toggle bit                     |                               |
-| 11 | `x & ~(1 << n)`                    | clear bit                      |                               |
-| 12 | `x \| (1 << n)`                     | set bit                       |                                |
-| 13 | `(x + (1 << n)) & ~((1 << n) - 1)` | align to power-of-two boundary |memory allocators<br />page alignment<br />kernel slabs|
+| 1  | `x & (x - 1)`                      | [clear lowest set bit](#1-clear-lowest-set-bit)           |  Used for bit counting loops.|
+| 2  | `x & -x`                           | [extract lowest set bit](#2-extract-lowest-set-bit)
+| 3  | `(x & (x - 1)) == 0`               | [check power of two](#3-check-power-of-two)             |   kernel page sizes<br />memory alignment <br />ring buffers|
+| 4  | `x \| (x - 1)`                     | [set bits below lowest set bit](#4-set-bits-below-lowest-set-bit) |                                |
+| 5  | `x & (x + 1)`                      | [clear trailing ones](#5-clear-trailing-ones-)            |                               |
+| 6  | `~x & (x + 1)`                     | [isolate lowest zero bit](#6-find-lowest-zero-bit-)        |                               |
+| 7  | `x ^ (x >> 1)`                     | [binary → Gray code](#7-binary--gray-code-)             |  rotary encoders<br /> hardware counters<br />error correction |
+| 8  | `x ^ (x >> 1) ^ (x >> 2) ...`      | [Gray → binary](#8-gray--binary)                  | Used in hardware decoding.  |
+| 9  | `x >> n & 1`                       | [test nth bit](#9-test-bit-)                   | CPU flags<br />protocol parsers|
+| 10 | `x ^ (1 << n)`                     | [toggle bit](#10-toggle-bit)                     |                               |
+| 11 | `x & ~(1 << n)`                    | [clear bit](#11-clear-bit)                      |                               |
+| 12 | `x \| (1 << n)`                    | [set bit](#12-set-bit-)                       |                                |
+| 13 | `(x + (1 << n)) & ~((1 << n) - 1)` | [align to power-of-two boundary](#13-align-to-power-of-two-boundary) |memory allocators<br />page alignment<br />kernel slabs|
 | 14 | `(x + y) ^ ((x ^ y) & -(x < y))`   | branchless min/max             |Advantages: avoids branch misprediction <br />useful in SIMD |
 | 15 | `x -= ((x >> 1) & 0x55555555)`     | fast bit count (popcount step) |Part of the SWAR popcount algorithm.<br /> Counts bits in parallel inside a register. |
 
