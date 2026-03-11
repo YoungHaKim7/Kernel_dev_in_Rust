@@ -67,7 +67,7 @@ fn main() {
 
 # NOT operator truth table[|🔝|](#link)
 
-|x|x'<br />$\neg x$<br />~x<br />!x|
+|x|x'<br />$\neg x$<br />`~x`<br />`!x`|
 |-|-|
 |0|	1 |
 |1|	0|
