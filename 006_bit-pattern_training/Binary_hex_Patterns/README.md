@@ -824,33 +824,72 @@ max : 10
 10 < 6 as i32 : false
 -(10 < 6 as i32) : 0
 ```
+### Why this trick exists
 
+- This appears in:
+  - CPU micro-optimizations
+  - vectorized math libraries
+  - GPU shaders
+  - compilers
+  - cryptography
 
-## [|🔝|](#link)
+- because branches can cause pipeline stalls.
+
+- Modern compilers often convert
+
+```rs
+// max
+x.max(y);
+
+// min
+x.min(y);
+```
+
+- into branchless instructions automatically.
+
+## 15. Fast popcount step [|🔝|](#link)
 
 ```c
 // main.c
 
-
+x -= (x >> 1) & 0x55555555
 ```
+
+- is the first step of the SWAR popcount algorithm
+
+- Counts bits in parallel inside a register.
+  - (SIMD Within A Register) used to count bits in parallel.
+
+### What 0x55555555 means
+
+```bash
+0x55555555
+= 01010101 01010101 01010101 01010101
+```
+
+- It selects alternating bits.
 
 
 ```rs
+// 214_dec                                    1101 0110
+// 0x5555_5555  (1,431,655,765_dec)
+// 0x5555_5555  0101 0101 0101 0101 0101 0101 0101 0101
+// (x >> 1)                                   0110 1011
+// &         65_dec                           0100 0001
+//
+// result (149_dec)
+//              0000_0000_0000_0000_0000_0000_1001_0101
+fn main() {
+    let mut x: u32 = 0b1101_0110;
 
+    x -= (x >> 1) & 0x5555_5555;
+
+    println!("result: {:032b}", x);
+}
 ```
 
 - result
 
 ```bash
-
+result: 0000 0000 0000 0000 0000 0000 1001 0101
 ```
-
-
-## [|🔝|](#link)
-## [|🔝|](#link)
-## [|🔝|](#link)
-## [|🔝|](#link)
-## [|🔝|](#link)
-## [|🔝|](#link)
-## [|🔝|](#link)
-## [|🔝|](#link)
