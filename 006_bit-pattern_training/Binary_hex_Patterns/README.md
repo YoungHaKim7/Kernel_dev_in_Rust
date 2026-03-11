@@ -25,6 +25,7 @@
 - [(외부링크) Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
 
 - [Boolean Logic](#boolean-logic)
+  - https://introcs.cs.princeton.edu/java/71boolean/
 
 - Operator Truth Table 기초
   - [NOT](#not-operator-truth-table)
@@ -59,10 +60,10 @@ fn main() {
 
 ||logic|java boolean|java bitwise|circuit design|
 |-|-|-|-|-|
-|NOT|$\neg x$|!x|~x|x'|
-|AND|$x\land y$|x && y|x & y|xy|
-|OR|$x\lor y$|x \|\| y|x \| y| x+y|
-|XOR|$x \oplus y$|x ^ y|x ^ y|$x \oplus y$|
+|NOT|$\neg x$|`!x`|`~x`|x'|
+|AND|$x\land y$|`x && y`|`x & y`|xy|
+|OR|$x\lor y$|`x \|\| y`|`x \| y`| x+y|
+|XOR|$x \oplus y$|`x ^ y`|`x ^ y`|$x \oplus y$|
 
 # NOT operator truth table[|🔝|](#link)
 
