@@ -719,24 +719,112 @@ negative!(8 -1) : 248
 negative!(8 -1) : 11111000
 ```
 
-## [|🔝|](#link)
+## 14. Branchless min/max[|🔝|](#link)
 
 ```c
 // main.c
 
-
+min = y ^ ((x ^ y) & -(x < y))
 ```
 
+- Advantages:
+  - avoids branch misprediction
+  - useful in SIMD
+
+- Rust code로 연습하기
+
+- MIN
 
 ```rs
+fn branchless_min(x: i32, y: i32) -> i32 {
+    y ^ ((x ^ y) & -((x < y) as i32))
+}
+```
+
+- MAX
+
+```rs
+fn branchless_max(x: i32, y: i32) -> i32 {
+    x ^ ((x ^ y) & -((x < y) as i32))
+}
+```
+
+### MIN
+
+```rs
+// 10   // 0000 1010
+// 6    // 0000 0110
+// x ^ y // 0000 1100    // 10 dec
+
+fn branchless_min(x: i32, y: i32) -> i32 {
+    y ^ ((x ^ y) & -((x < y) as i32))
+}
+
+fn main() {
+    let x = 10;
+    let y = 6;
+
+    let min = branchless_min(x, y);
+
+    println!("x   : {}", x);
+    println!("y   : {}", y);
+    println!("min : {}", min);
+
+    let test_eval = x < y as i32;
+    println!("10 < 6 as i32 : {}", test_eval);
+    println!("-(10 < 6 as i32) : {}", -(test_eval as i32));
+    // println!("10 < 6 as i32 : {:08b}", test_eval);
+}
 
 ```
 
-- result
+- result(MIN)
 
 ```bash
-
+x   : 10
+y   : 6
+min : 6
+10 < 6 as i32 : false
+-(10 < 6 as i32) : 0
 ```
+
+### MAX
+
+```rs
+// 10   // 0000 1010
+// 6    // 0000 0110
+// x ^ y // 0000 1100    // 10 dec
+
+fn branchless_max(x: i32, y: i32) -> i32 {
+    x ^ ((x ^ y) & -((x < y) as i32))
+}
+
+fn main() {
+    let x = 10;
+    let y = 6;
+
+    let max = branchless_max(x, y);
+
+    println!("x   : {}", x);
+    println!("y   : {}", y);
+    println!("max : {}", max);
+
+    let test_eval = x < y as i32;
+    println!("10 < 6 as i32 : {}", test_eval);
+    println!("-(10 < 6 as i32) : {}", -(test_eval as i32));
+    // println!("10 < 6 as i32 : {:08b}", test_eval);
+}
+
+- result(MAX)
+
+```bash
+x   : 10
+y   : 6
+max : 10
+10 < 6 as i32 : false
+-(10 < 6 as i32) : 0
+```
+
 
 ## [|🔝|](#link)
 
