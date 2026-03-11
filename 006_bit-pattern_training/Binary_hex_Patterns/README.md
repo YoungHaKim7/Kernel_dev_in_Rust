@@ -92,7 +92,7 @@ fn main() {
 
 # XOR operator truth table[|🔝|](#link)
 
-|x|y|x XOR y<br />$x \oplus y$<br />x ^ y|
+|x|y|x XOR y<br />$x \oplus y$<br />`x ^ y`|
 |-|-|-|
 |0|	0 |0|
 |0|	1|	1|
