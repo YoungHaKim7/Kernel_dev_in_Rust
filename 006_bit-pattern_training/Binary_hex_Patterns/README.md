@@ -74,7 +74,7 @@ fn main() {
 
 # AND operator truth table[|🔝|](#link)
 
-|x|y|x AND y<br />xy<br />$x\land y$<br />x && y|
+|x|y|x AND y<br />xy<br />$x\land y$<br />`x && y`|
 |-|-|-|
 |0|	0 |0|
 |0|	1 |0|
@@ -83,7 +83,7 @@ fn main() {
 
 # OR  operator truth table[|🔝|](#link)
 
-|x|y|x OR y<br />x+y<br />$x\lor y$<br />x \|\| y|
+|x|y|x OR y<br />x+y<br />$x\lor y$<br />`x \|\| y`|
 |-|-|-|
 |0|	0 |0|
 |0|	1 |1|
