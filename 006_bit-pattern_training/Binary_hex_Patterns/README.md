@@ -19,8 +19,8 @@
   - [11. Clear bit](#11-clear-bit)
   - [12. Set bit](#12-set-bit-)
   - [13. Align to power-of-two boundary](#13-align-to-power-of-two-boundary)
-  - [14. Branchless min/max]()
-  - [15. Fast popcount step]()
+  - [14. Branchless min/max](#14-branchless-minmax)
+  - [15. Fast popcount step](#15-fast-popcount-step-)
 
 - [(외부링크) Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
 
@@ -32,6 +32,9 @@
   - [AND](#and-operator-truth-table)
   - [OR](#or--operator-truth-table)
   - [XOR](#xor-operator-truth-table)
+
+- 만들면서 익히기
+   - [Base64기초]()
 
 <hr />
 
@@ -893,3 +896,237 @@ fn main() {
 ```bash
 result: 0000 0000 0000 0000 0000 0000 1001 0101
 ```
+
+# Base64기초[|🔝|](#link)
+
+- Rust Code로 해보기
+
+```rs
+fn main() {
+    let input = "test";
+    let bytes = input.as_bytes();
+
+    let i: usize = 0;
+
+    let b0 = bytes[i];
+    let b1 = if i + 1 < bytes.len() { bytes[i + 1] } else { 0 };
+    let b2 = if i + 2 < bytes.len() { bytes[i + 2] } else { 0 };
+
+    // Combine into 24 bits
+    let triple: u32 =
+        ((b0 as u32) << 16) |
+        ((b1 as u32) << 8)  |
+        (b2 as u32);
+
+    println!("{input}");
+    println!("{b0}");
+    println!("{b1}");
+    println!("{triple}");
+    println!("{:b}", triple);
+}
+```
+
+- Why `input[i]` fails
+  - Rust strings are UTF-8, not byte arrays.
+
+- So you must do:
+```rs
+input.as_bytes()[i]
+```
+
+- You are building a 24-bit integer from 3 bytes using bit operations.
+- The operator `|` is bitwise OR,
+  - and `<<` is left shift.
+- Let’s go step-by-step with your example:
+
+```rs
+input = "test"
+bytes = [116, 101, 115, 116]
+```
+
+- ASCII values:
+
+```bash
+t = 116 = 0b0111 0100
+e = 101 = 0b0110 0101
+s = 115 = 0b0111 0011
+```
+
+- So
+
+```rs
+b0 = 116
+b1 = 101
+b2 = 115
+```
+
+<hr />
+
+- Step 1 — Shift b0 left 16 bits
+
+```rs
+(b0 as u32) << 16
+```
+
+```rs
+01110100 << 16
+
+= 01110100 00000000 00000000
+```
+
+- Binary (24 bits):
+
+```rs
+01110100 00000000 00000000
+```
+
+- Decimal:
+
+```bash
+116 << 16 = 7602176
+```
+
+<hr />
+
+- Step 2 — Shift b1 left 8 bits
+
+
+```rs
+(b1 as u32) << 8
+```
+
+```rs
+01100101 << 8
+
+= 00000000 01100101 00000000
+```
+
+- Binary:
+
+```rs
+00000000 01100101 00000000
+```
+
+- Decimal:
+```rs
+101 << 8 = 25856
+```
+
+<hr />
+
+- Step 3 — b2 stays in lowest 8 bits
+
+
+```rs
+(b2 as u32)
+```
+
+```rs
+00000000 00000000 01110011
+```
+
+```rs
+115
+```
+
+<hr />
+
+- Step 4 — Combine using `|` (bitwise OR)
+
+
+```rs
+((b0 << 16) | (b1 << 8) | b2)
+```
+
+- Bitwise OR combines bits:
+
+```bash
+01110100 00000000 00000000
+00000000 01100101 00000000
+00000000 00000000 01110011
+--------------------------------
+01110100 01100101 01110011
+```
+
+- Final result:
+
+```bash
+0111 0100 0110 0101 0111 0011
+```
+
+- Decimal:
+
+```txt
+7602176
++ 25856
++   115
+---------
+7628147
+```
+
+<hr />
+
+- Step 5 — Why this is done
+
+- This packs 3 bytes into one 24-bit number.
+
+- Layout:
+
+```bash
+[ b0 ][ b1 ][ b2 ]
+ 8bit 8bit 8bit
+```
+
+```bash
+b0 -> high byte
+b1 -> middle byte
+b2 -> low byte
+```
+
+- This is used in:
+  - Base64 encoding
+  - Network protocols
+  - Image formats
+  - Compression
+  - Crypto
+  - Binary parsers
+
+
+<hr />
+
+- Step 6 — Why `|` works
+
+- Bitwise OR:
+
+```bash
+0 | 0 = 0
+1 | 0 = 1
+0 | 1 = 1
+1 | 1 = 1
+```
+
+- Since each byte is shifted to a different region, OR just merges them.
+
+```bash
+AAAA0000
+0000BBBB
+000000CC
+---------
+AAAABBBBCC
+```
+
+<hr />
+
+- Step 7 — This is exactly Base64 step
+
+- Base64 takes:
+
+```bash
+3 bytes → 24 bits → split into 4 × 6 bits
+```
+
+- You just finished the first step of Base64 encoder.
+
+# SWAR popcount algorithm (the famous 5-mask method)[|🔝|](#link)
+
+- one of the coolest tricks in low-level programming.
