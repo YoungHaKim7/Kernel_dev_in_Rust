@@ -36,6 +36,7 @@
 - 만들면서 익히기
   - [Base64기초](#base64기초)
   - [SWAR popcount algorithm (the famous 5-mask method)](#swar-popcount-algorithm-the-famous-5-mask-method)
+    - [Why this was famous(SWAR)](#why-this-was-famousswar)
 
 <hr />
 
