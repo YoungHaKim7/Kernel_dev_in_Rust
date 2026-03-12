@@ -34,7 +34,8 @@
   - [XOR](#xor-operator-truth-table)
 
 - 만들면서 익히기
-   - [Base64기초]()
+  - [Base64기초](#base64기초)
+  - [SWAR popcount algorithm (the famous 5-mask method)](#swar-popcount-algorithm-the-famous-5-mask-method)
 
 <hr />
 
@@ -1127,6 +1128,243 @@ AAAABBBBCC
 
 - You just finished the first step of Base64 encoder.
 
+<br />
+
+<hr />
+
 # SWAR popcount algorithm (the famous 5-mask method)[|🔝|](#link)
 
 - one of the coolest tricks in low-level programming.
+
+- The SWAR popcount (5-mask method) counts bits in parallel inside one register.
+  - It is called SIMD Within A Register because each step sums bits in groups:
+
+```rs
+1-bit → 2-bit → 4-bit → 8-bit → 16-bit → 32-bit
+```
+
+- This is the famous algorithm used in old compilers, kernels, and graphics code before POPCNT.
+
+## Full SWAR popcount code (reference)
+
+```c
+// main.c
+
+x -= (x >> 1) & 0x55555555;
+x = (x & 0x33333333) + ((x >> 2) & 0x33333333);
+x = (x + (x >> 4)) & 0x0F0F0F0F;
+x += x >> 8;
+x += x >> 16;
+x &= 0x3F;
+```
+
+- rust
+
+```rs
+// main.rs
+
+fn popcount(mut x: u32) -> u32 {
+    x -= (x >> 1) & 0x5555_5555;
+    x = (x & 0x3333_3333) + ((x >> 2) & 0x3333_3333);
+    x = (x + (x >> 4)) & 0x0F0F_0F0F;
+    x += x >> 8;
+    x += x >> 16;
+    x & 0x3F
+}
+```
+
+
+## Example value
+
+```bash
+x = 11010110  (5 bits set)
+```
+
+- We will track how the register changes.
+
+### Step 1 — count per 2 bits
+
+```bash
+mask = 0x55555555
+= 01010101 01010101 01010101 01010101
+```
+
+```bash
+x        11010110
+x>>1     01101011
+mask     01010101
+&        01000001
+----------------
+result   10010101
+```
+
+- Interpret as pairs:
+
+```bash
+10 01 01 01
+```
+
+- Each pair = number of 1s in original pair.
+
+```bash
+2  1  1  1
+```
+
+### Step 2 — count per 4 bits
+
+```bash
+mask = 0x33333333
+= 00110011 00110011
+```
+
+
+```bash
+x = 10010101
+
+x & mask         00010001
+(x>>2) & mask    00100001
+-------------------------
+sum              00110010
+```
+
+- Now per 4 bits:
+
+```bash
+0011 0010
+```
+
+- Meaning:
+
+```bash
+3   2
+```
+
+### Step 3 — count per 8 bits
+
+```bash
+mask = 0x0F0F0F0F
+= 00001111 00001111
+```
+
+```bash
+x = 00110010
+
+x + (x>>4)
+
+00110010
+00000011
+---------
+00110101
+
+& mask
+
+00000101
+```
+
+- Now:
+
+```bash
+00000101
+```
+
+- Meaning:
+
+```bash
+5
+```
+
+- We already have the popcount in 8 bits.
+
+### Step 4 — sum 8-bit groups
+
+```bash
+x += x >> 8
+```
+
+- For 32-bit numbers this merges bytes.
+
+- Visual:
+
+```bash
+00000000 00000000 00000000 00000101
+```
+
+- No change here because small number.
+
+### Step 5 — sum 16-bit groups
+
+```bash
+x += x >> 16
+```
+
+- Still:
+
+```bash
+00000101
+```
+
+### Final mask
+
+```bash
+x & 0x3F
+```
+
+- Why?
+  - Max popcount of 32-bit = 32
+
+```bash
+32 = 100000
+```
+
+- Needs 6 bits → mask 0x3F
+
+```bash
+00111111
+```
+
+## Final result
+
+```bash
+11010110 → 5
+```
+
+## Why this is called SWAR
+
+- Because operations happen in parallel:
+
+| Step | Group size |
+| ---- | ---------- |
+| 1    | 2 bits     |
+| 2    | 4 bits     |
+| 3    | 8 bits     |
+| 4    | 16 bits    |
+| 5    | 32 bits    |
+
+- This is like SIMD but inside one register.
+
+### Why this was famous(SWAR)
+
+- Used in:
+  - old GCC / Clang
+  - Linux kernel
+  - Quake engine
+  - graphics pipelines
+  - cryptography
+  - chess engines
+  - Before CPUs had:
+
+```c
+POPCNT
+```
+
+- instruction.
+
+## Modern Rust
+
+- Today you just write:
+
+```rs
+x.count_ones()
+```
+
+- But internally the compiler may still use tricks like this on old CPUs.
