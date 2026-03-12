@@ -36,6 +36,7 @@
 - 만들면서 익히기
   - [Base64기초](#base64기초)
   - [SWAR popcount algorithm (the famous 5-mask method)](#swar-popcount-algorithm-the-famous-5-mask-method)
+    - [Why this is called SWAR](#why-this-is-called-swar)
     - [Why this was famous(SWAR)](#why-this-was-famousswar)
 
 <hr />
@@ -1329,7 +1330,7 @@ x & 0x3F
 11010110 → 5
 ```
 
-## Why this is called SWAR
+## Why this is called SWAR[|🔝|](#link)
 
 - Because operations happen in parallel:
 
@@ -1343,7 +1344,7 @@ x & 0x3F
 
 - This is like SIMD but inside one register.
 
-### Why this was famous(SWAR)
+### Why this was famous(SWAR)[|🔝|](#link)
 
 - Used in:
   - old GCC / Clang
