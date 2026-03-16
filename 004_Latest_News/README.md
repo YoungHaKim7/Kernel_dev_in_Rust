@@ -5,6 +5,9 @@
 
 <hr />
 
+# coreutils진행사항
+- https://github.com/uutils/coreutils/releases/tag/0.7.0
+
 # 최신 (러스트 Rust)커널 소식[|🔝|](#link)
 - [(251211)**[리눅스 커널에서의 Rust 실험 (성공적) 종료]](#251211리눅스-커널에서의-rust-실험-성공적-종료)
 - [(251128)Rust For Linux Kernel Co-Maintainer Formally Steps Down](https://www.phoronix.com/news/Alex-Gaynor-Rust-Maintainer)
