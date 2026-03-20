@@ -9,6 +9,8 @@
     - https://github.com/microsoft/WSL2-Linux-Kernel
   - [관련 블로그) May 19, 2025 | The Windows Subsystem for Linux is now open source By Pierre Boulay](https://blogs.windows.com/windowsdeveloper/2025/05/19/the-windows-subsystem-for-linux-is-now-open-source/)
  
+- 커널 한눈에 보기
+  - https://makelinux.github.io/kernel/map/
 
 <hr />
 
