@@ -53,6 +53,11 @@
 
 # (251211)러스트 커널 접수 완료 👍[|🔝|](#link)
 
+# (260322) **[Ubuntu 26.04, 46년 만에 ‘무음 sudo 비밀번호 입력’ 종료](<https://news.hada.io/topic?id=27726&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
+- Ubuntu 26.04 LTS에서는 `sudo` 명령 실행 시 **비밀번호 입력마다 별표(*)가 표시되는 시각적 피드백**이 기본 활성화됨  
+- 이 기능은 **Rust로 재작성된 sudo-rs** 도입으로 가능해졌으며, Canonical이 Ubuntu 25.10부터 이를 기본 sudo로 채택함  
+- 일부 사용자는 **비밀번호 길이 노출 위험**을 이유로 반대했으…
+
 # (251211)**[리눅스 커널에서의 Rust 실험 (성공적) 종료](<https://news.hada.io/topic?id=24987&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**[|🔝|](#link)
 - 리눅스 커널 내 **Rust 통합 작업**이 실험 단계를 마치고 **정식 구성 요소**로 인정됨  
 - 연례 **Maintainers Summit**에서 개발자들이 Rust 지원을 **영구적 기능으로 채택**하기로 합의  
