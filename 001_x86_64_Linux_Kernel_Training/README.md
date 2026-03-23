@@ -3,6 +3,7 @@
 - [리눅스 커널을 만들기 위해 마스터 해야 3권의 책 How to do Linux Kernel dev.](#howto-do-linux-kernel-development)
   - [https://github.com/gregkh/kernel-tutorial](https://github.com/gregkh/kernel-tutorial)
   - [유튜브 영상(100214)write and submit your first linux kernel patch](https://youtu.be/LLBrBBImJt4?si=9HGFZk_2tbJY95rg)
+  - [Presentation on how the Linux kernel is developed | gregkh/kernel-development](https://github.com/gregkh/kernel-development)
 
 - [A PROGRAM is not a PROCESS. | Core Dumped](https://youtu.be/7ge7u5VUSbE)
 
