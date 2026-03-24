@@ -9,6 +9,7 @@
 - https://github.com/uutils/coreutils/releases/tag/0.7.0
 
 # 최신 (러스트 Rust)커널 소식[|🔝|](#link)
+- [(260322) Ubuntu 26.04, 46년 만에 ‘무음 sudo 비밀번호 입력’ 종료](#260322-ubuntu-2604-46년-만에-무음-sudo-비밀번호-입력-종료)
 - [(251211)**[리눅스 커널에서의 Rust 실험 (성공적) 종료]](#251211리눅스-커널에서의-rust-실험-성공적-종료)
 - [(251128)Rust For Linux Kernel Co-Maintainer Formally Steps Down](https://www.phoronix.com/news/Alex-Gaynor-Rust-Maintainer)
 
