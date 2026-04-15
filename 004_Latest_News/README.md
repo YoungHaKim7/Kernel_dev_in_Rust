@@ -52,6 +52,29 @@
 
 <hr />
 
+# 260415 Linux 커널 7.0 공식 릴리스 (9to5linux.com/linux-kernel-7-0-officially-released-this-is-whats-new)
+10P by princox 13시간전 
+- Linus Torvalds가 Linux 커널 7.0을 공식 릴리스했습니다. **다만 버전 번호가 크게 올랐다고 해서 획기적인 변화가 있는 건 아닙니다.** Torvalds는 마이너 버전이 x.19처럼 너무 높아지면 메이저 버전을 올리는 관행을 유지하고 있으며, 이번 7.0도 그 연장선입니다.
+
+## 주요 변경사항
+
+### Rust 지원 정식화: 가장 주목할 변화는 Rust의 "실험적" 딱지가 제거된 것입니다. Rust가 커널 개발의 주류 언어가 된 건 아니지만, 프로젝트 내 점진적 통합에서 중요한 이정표입니다.
+
+보안: 커널 모듈 인증에 ML-DSA 포스트 양자 서명이 추가됐고, SHA-1 기반 모듈 서명 방식은 제거됐습니다.
+
+Self-healing XFS: XFS 파일시스템 오류를 실시간으로 감시하고, 마운트 상태를 유지하면서 백그라운드 데몬이 자동으로 복구를 트리거하는 헬스 모니터링 시스템이 추가됐습니다.
+
+io_uring / BPF: io_uring에 cBPF 필터 지원이 추가됐고, BTF 타입 조회는 이진 탐색으로 성능이 개선됐습니다.
+
+스왑 및 메모리: zram 압축 데이터를 디스크에 바로 쓸 수 있게 되어 메모리 압박 상황에서 스왑 성능이 향상됐습니다.
+
+네트워킹: AccECN이 기본 활성화되어, 38년 된 TCP 설계 결함이 수정됐습니다. 패킷 드롭 이전에 혼잡 피드백을 지속적으로 받을 수 있습니다.
+
+KVM: AMD Zen5 이상 CPU에서 ERAPS(Enhanced Return Address Predictor Security) 가상화 지원이 추가됐습니다.
+
+AI 키보드 키: AI 전용 키보드 단축키를 위한 3개의 새로운 AI 특수 키가 추가됐습니다
+- https://news.hada.io/topic?id=28518
+
 # (251211)러스트 커널 접수 완료 👍[|🔝|](#link)
 
 # (260322) **[Ubuntu 26.04, 46년 만에 ‘무음 sudo 비밀번호 입력’ 종료](<https://news.hada.io/topic?id=27726&utm_source=discord&utm_medium=bot&utm_campaign=1480>)**
