@@ -1,7 +1,10 @@
 # link
+- rust libc공부중.
+  - https://github.com/YoungHaKim7/glibc_The_GNU_C_Library_Training
+
+<hr />
 
 - [linux 커널 현재 최신버젼(250911기준 ver. 6.17-rc5)](#linux커널_현재-버젼)
-
 
 - [Kernel_dev_in_Rust](#kernel_dev_in_rust)
 
