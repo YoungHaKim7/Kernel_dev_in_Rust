@@ -48,6 +48,22 @@ $ uname -r
 7.0.12-1-default
 ```
 
+### 내 리눅스가 뭔지 알아보기(`cat /etc/os-release`)
+
+```bash
+$ cat /etc/os-release
+
+NAME="openSUSE Tumbleweed"
+# VERSION="20260625"
+ID="opensuse-tumbleweed"
+ID_LIKE="opensuse suse"
+VERSION_ID="20260625"
+..
+..
+..
+```
+
+
 # 커밋 보면서 커널 공부
 - 리눅스 커널 commit 보기
   - https://lore.kernel.org/all/?t=20251105135512
