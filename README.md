@@ -39,6 +39,14 @@ longterm: 	5.10.252 	2026-03-04
 linux-next: 	next-20260318 	2026-03-18 				
 ```
 
+## 내가 쓰는 리눅스 커널 버젼 체크(`uname -r`)
+
+```bash
+$ uname -r
+
+7.0.12-1-default
+```
+
 # 커밋 보면서 커널 공부
 - 리눅스 커널 commit 보기
   - https://lore.kernel.org/all/?t=20251105135512
