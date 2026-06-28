@@ -63,6 +63,13 @@ VERSION_ID="20260625"
 ..
 ```
 
+# stable과 dev버젼 전통 2.6 버젼이후 다르게 쓰임
+- Does the odd-even number still mean anything?
+  - A long time ago Linux used a system where odd numbers after the first dot indicated pre-release, development kernels (e.g. 2.1, 2.3, 2.5). This scheme was abandoned after the release of kernel 2.6 and these days pre-release kernels are indicated with "-rc"
+- 홀짝수는 여전히 의미가 있나요?
+  - 오래 전에 리눅스는 첫 번째 점 뒤에 홀수 숫자가 프리릴리즈, 개발 커널(예: 2.1, 2.3, 2.5)을 나타내는 시스템을 사용했습니다. 이 방식은 커널 2.6이 출시된 후 포기되었으며, 요즘은 프리릴리즈 커널이 "-rc"로 표시됩니다
+- https://www.kernel.org/category/releases.html
+
 
 # 커밋 보면서 커널 공부
 - 리눅스 커널 commit 보기
