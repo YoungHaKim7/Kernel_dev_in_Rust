@@ -15,3 +15,89 @@
 - https://dev.to/bytehackr/unlocking-the-power-of-linux-device-drivers-1llh
 
 <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fu8vo44af5r456zywodbr.png" />
+
+## 6. Writing a Simple Character Device Driver
+- 간단한 리눅스 드라이버 작성해 보기
+- A character device driver handles devices like serial ports that send and receive data as a stream of bytes. Below is an example of a simple character device driver that can be loaded as a kernel module.
+
+- Example: Simple Character Device Driver
+
+```c
+#include <linux/module.h>
+#include <linux/fs.h>
+#include <linux/uaccess.h>
+
+#define DEVICE_NAME "simple_char_dev"
+#define BUF_LEN 80
+
+static char msg[BUF_LEN]; // Buffer to hold the data
+
+// Function prototypes for character driver
+static int device_open(struct inode *, struct file *);
+static int device_release(struct inode *, struct file *);
+static ssize_t device_read(struct file *, char *, size_t, loff_t *);
+static ssize_t device_write(struct file *, const char *, size_t, loff_t *);
+
+// File operations structure
+static struct file_operations fops = {
+    .read = device_read,
+    .write = device_write,
+    .open = device_open,
+    .release = device_release,
+};
+
+static int major_num;
+
+// Driver initialization function
+static int __init simple_char_init(void) {
+    major_num = register_chrdev(0, DEVICE_NAME, &fops);
+    if (major_num < 0) {
+        printk(KERN_ALERT "Failed to register character device\n");
+        return major_num;
+    }
+    printk(KERN_INFO "Simple char driver loaded with major number %d\n", major_num);
+    return 0;
+}
+
+// Driver cleanup function
+static void __exit simple_char_exit(void) {
+    unregister_chrdev(major_num, DEVICE_NAME);
+    printk(KERN_INFO "Simple char driver unloaded\n");
+}
+
+static int device_open(struct inode *inode, struct file *file) {
+    printk(KERN_INFO "Device opened\n");
+    return 0;
+}
+
+static ssize_t device_read(struct file *filp, char *buffer, size_t len, loff_t *offset) {
+    int bytes_read = 0;
+    if (*msg == 0)
+        return 0;
+    while (len && *msg) {
+        put_user(*(msg++), buffer++);
+        len--;
+        bytes_read++;
+    }
+    return bytes_read;
+}
+
+static ssize_t device_write(struct file *filp, const char *buffer, size_t len, loff_t *off) {
+    int i;
+    for (i = 0; i < len && i < BUF_LEN; i++)
+        get_user(msg[i], buffer + i);
+    return i;
+}
+
+static int device_release(struct inode *inode, struct file *file) {
+    printk(KERN_INFO "Device closed\n");
+    return 0;
+}
+
+module_init(simple_char_init);
+module_exit(simple_char_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Author");
+MODULE_DESCRIPTION("Simple Character Device Driver");
+```
