@@ -10,3 +10,8 @@
 # 이미지
 
 <img src="./475277236_1022688503211799_4727994723488223723_n.jpg" />
+
+# Figure 01: Linux Kernel Architecture Diagram
+- https://dev.to/bytehackr/unlocking-the-power-of-linux-device-drivers-1llh
+
+< img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fu8vo44af5r456zywodbr.png" />
