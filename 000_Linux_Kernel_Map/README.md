@@ -7,6 +7,10 @@
 # LinuxKernel Source(ver 7.0 미리 살펴보자)
 - https://elixir.bootlin.com/linux/v7.0-rc4/source/tools/perf/util/mutex.h
 
+# 리눅스 커널 정리 /with MINZKN
+- Linux 커널 개발자를 위한 종합 한글 레퍼런스
+  - https://www.minzkn.com/linuxkernel/index.html
+
 # C 언어 완전 가이드 & 커널 C 관용어
 - 리눅스 커널 코드베이스가 실제로 사용하는 C 관용어를 표준 문법 설명을 넘어 실전 규약으로 정리합니다. GNU 확장(`__attribute__`, `typeof`, statement expression), 타입 안정 매크로(Macro)(`container_of`, `BUILD_BUG_ON`), 메모리 모델 보조 매크로(`READ_ONCE`, `WRITE_ONCE`, 배리어), 오류 포인터/정리 경로 패턴, sparse 어노테이션과 lockless 코드 주석 규칙까지 유지보수와 리뷰 관점에서 상세히 다룹니다.
 - https://www.minzkn.com/linuxkernel/pages/c-language.html
