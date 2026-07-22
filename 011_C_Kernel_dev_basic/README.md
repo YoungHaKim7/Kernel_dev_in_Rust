@@ -1,0 +1,1 @@
+- https://www.minzkn.com/linuxkernel/pages/modules.html
