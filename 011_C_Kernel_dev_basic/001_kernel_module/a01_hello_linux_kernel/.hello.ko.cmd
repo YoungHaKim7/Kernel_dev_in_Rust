@@ -1,1 +1,0 @@
-savedcmd_hello.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-7.1.3-1-obj/x86_64/default/scripts/module.lds -o hello.ko hello.o hello.mod.o .module-common.o
