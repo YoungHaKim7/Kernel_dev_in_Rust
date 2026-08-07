@@ -4,6 +4,8 @@
 
 <hr />
 
+- [한국분이 정리한 커널 공부하기 좋다. 러스트도 정리 잘됨.](https://www.minzkn.com/linuxkernel/index.html)
+
 - [linux 커널 현재 최신버젼(250911기준 ver. 6.17-rc5)](#linux커널_현재-버젼)
 
 - [Kernel_dev_in_Rust](#kernel_dev_in_rust)
