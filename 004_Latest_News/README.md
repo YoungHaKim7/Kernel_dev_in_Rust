@@ -2,6 +2,7 @@
 
 - [Rust unstable features needed for the kernel #2](https://github.com/Rust-for-Linux/linux/issues/2)
 
+- [lwn유료 뉴스 최신글]()
 
 <hr />
 
@@ -22,6 +23,17 @@
     - [(241127)[9회 커널 개발자 모임] 1. kernel report (Part3) - 이현철 개발자님 Austin Kim](https://youtu.be/cnkdD1-pPsI?si=AAQXiSkcHTQXYASK)
   - 제10회 한국 리눅스 커널 개발자 모임(250918(목))
     - https://kernel-dev-ko.github.io/10th/
+
+<hr />
+
+# lwn유료 뉴스 최신글[|🔝|](#link)
+## Safe self-referential data structures in kernel Rust
+- By Daroc Alden
+October 16, 2026
+- https://lwn.net/SubscriberLink/1099224/54c55e87a0828522/
+
+
+<hr />
 
 # Do kernel maintainers support Rust in the kernel?
 - 출처 : https://rust-for-linux.com/rust-kernel-policy
