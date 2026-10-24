@@ -2,7 +2,7 @@
 
 - [Rust unstable features needed for the kernel #2](https://github.com/Rust-for-Linux/linux/issues/2)
 
-- [lwn유료 뉴스 최신글]()
+- [lwn.net / 유료 뉴스 최신글](#lwn유료-뉴스-최신글)
 
 <hr />
 
